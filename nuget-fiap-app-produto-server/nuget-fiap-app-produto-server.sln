@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuget-fiap-app-produto-server", "nuget-fiap-app-produto-server.csproj", "{68CEA9B5-2392-4026-8F78-551F25616CA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuget-fiap-app-produto-common", "..\nuget-fiap-app-produto-common\nuget-fiap-app-produto-common.csproj", "{794626FF-DF5F-485D-9E0D-658C10DC3063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuget-fiap-app-produto-repository", "..\nuget-fiap-app-produto-repository\nuget-fiap-app-produto-repository.csproj", "{60034E8E-220F-4C2D-9225-31B40B41E09E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuget-fiap-app-produto", "..\nuget-fiap-app-produto\nuget-fiap-app-produto.csproj", "{8EE69EA3-6186-4317-98F3-53DEDCDA1938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuget-fiap-app-produto-test", "..\nuget-fiap-app-produto-test\nuget-fiap-app-produto-test.csproj", "{35F0DFB9-202C-46E1-9007-EF8E298E02DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68CEA9B5-2392-4026-8F78-551F25616CA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68CEA9B5-2392-4026-8F78-551F25616CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68CEA9B5-2392-4026-8F78-551F25616CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68CEA9B5-2392-4026-8F78-551F25616CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{794626FF-DF5F-485D-9E0D-658C10DC3063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{794626FF-DF5F-485D-9E0D-658C10DC3063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{794626FF-DF5F-485D-9E0D-658C10DC3063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{794626FF-DF5F-485D-9E0D-658C10DC3063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60034E8E-220F-4C2D-9225-31B40B41E09E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60034E8E-220F-4C2D-9225-31B40B41E09E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60034E8E-220F-4C2D-9225-31B40B41E09E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60034E8E-220F-4C2D-9225-31B40B41E09E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE69EA3-6186-4317-98F3-53DEDCDA1938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE69EA3-6186-4317-98F3-53DEDCDA1938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE69EA3-6186-4317-98F3-53DEDCDA1938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE69EA3-6186-4317-98F3-53DEDCDA1938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35F0DFB9-202C-46E1-9007-EF8E298E02DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F0DFB9-202C-46E1-9007-EF8E298E02DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F0DFB9-202C-46E1-9007-EF8E298E02DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F0DFB9-202C-46E1-9007-EF8E298E02DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE423BA0-7FE4-48C8-B817-77A4A1A113FB}
+	EndGlobalSection
+EndGlobal

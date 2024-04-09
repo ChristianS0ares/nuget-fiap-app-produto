@@ -9,7 +9,7 @@ using Xunit;
 
 namespace nuget_fiap_app_produto_test.Controller
 {
-    public class CategoriaControllerIT
+    public class CategoriaControllerIT : IClassFixture<WebApplicationFactory<Program>>
     {
         private readonly HttpClient _client;
 

@@ -7,6 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup>
+	<PreserveCompilationContext>true</PreserveCompilationContext>
+  </PropertyGroup>
+	
 	<ItemGroup>
 		<PackageReference Include="coverlet.msbuild" Version="6.0.2">
 			<PrivateAssets>all</PrivateAssets>
@@ -33,7 +37,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\nuget-fiap-app-produto-common\nuget-fiap-app-produto-common.csproj" />
+    <ProjectReference Include="..\nuget-fiap-app-produto-server\nuget-fiap-app-produto-server.csproj" />
     <ProjectReference Include="..\nuget-fiap-app-produto\nuget-fiap-app-produto.csproj" />
+  </ItemGroup>	
+
+  <ItemGroup>
+    <None Update="xunit.runner.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

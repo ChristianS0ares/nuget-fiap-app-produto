@@ -2,6 +2,10 @@
   "stepAssemblies": [
     { "assembly": "nuget-fiap-app-produto-test" }
   ],
+  "xunit": {
+    "collectionBehavior": "Assembly",
+    "stopOnFail": true
+  },
   "language": {
     "feature": "pt-BR"
   }

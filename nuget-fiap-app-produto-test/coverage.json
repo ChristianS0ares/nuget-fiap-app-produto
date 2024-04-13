@@ -1,0 +1,1571 @@
+{
+  "nuget-fiap-app-produto-common.dll": {
+    "C:\\Fase4\\nuget-fiap-app-produto\\nuget-fiap-app-produto-common\\Models\\Categoria.cs": {
+      "nuget_fiap_app_produto_common.Models.Categoria": {
+        "System.Int32 nuget_fiap_app_produto_common.Models.Categoria::get_Id()": {
+          "Lines": {
+            "6": 177
+          },
+          "Branches": []
+        },
+        "System.String nuget_fiap_app_produto_common.Models.Categoria::get_Nome()": {
+          "Lines": {
+            "7": 185
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Fase4\\nuget-fiap-app-produto\\nuget-fiap-app-produto-common\\Models\\Produto.cs": {
+      "nuget_fiap_app_produto_common.Models.Produto": {
+        "System.Int32 nuget_fiap_app_produto_common.Models.Produto::get_Id()": {
+          "Lines": {
+            "6": 70
+          },
+          "Branches": []
+        },
+        "System.String nuget_fiap_app_produto_common.Models.Produto::get_Nome()": {
+          "Lines": {
+            "7": 62
+          },
+          "Branches": []
+        },
+        "System.Decimal nuget_fiap_app_produto_common.Models.Produto::get_Preco()": {
+          "Lines": {
+            "8": 62
+          },
+          "Branches": []
+        },
+        "System.String nuget_fiap_app_produto_common.Models.Produto::get_Descricao()": {
+          "Lines": {
+            "9": 62
+          },
+          "Branches": []
+        },
+        "System.String nuget_fiap_app_produto_common.Models.Produto::get_UrlImagem()": {
+          "Lines": {
+            "10": 62
+          },
+          "Branches": []
+        },
+        "nuget_fiap_app_produto_common.Models.Categoria nuget_fiap_app_produto_common.Models.Produto::get_Categoria()": {
+          "Lines": {
+            "11": 71
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "nuget-fiap-app-produto-repository.dll": {
+    "C:\\Fase4\\nuget-fiap-app-produto\\nuget-fiap-app-produto-repository\\CategoriaRepository.cs": {
+      "nuget_fiap_app_produto_repository.CategoriaRepository": {
+        "System.Void nuget_fiap_app_produto_repository.CategoriaRepository::.ctor(nuget_fiap_app_produto_repository.DB.RepositoryDB)": {
+          "Lines": {
+            "12": 15,
+            "13": 15,
+            "14": 15,
+            "15": 15
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto_repository.CategoriaRepository/<Create>d__4": {
+        "System.Void nuget_fiap_app_produto_repository.CategoriaRepository/<Create>d__4::MoveNext()": {
+          "Lines": {
+            "34": 9,
+            "35": 9,
+            "38": 9,
+            "39": 9,
+            "40": 9,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "46": 9
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto_repository.CategoriaRepository/<Delete>d__6": {
+        "System.Void nuget_fiap_app_produto_repository.CategoriaRepository/<Delete>d__6::MoveNext()": {
+          "Lines": {
+            "64": 3,
+            "65": 3,
+            "68": 3,
+            "69": 3,
+            "70": 3,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "76": 3
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto_repository.CategoriaRepository/<GetAll>d__2": {
+        "System.Void nuget_fiap_app_produto_repository.CategoriaRepository/<GetAll>d__2::MoveNext()": {
+          "Lines": {
+            "18": 3,
+            "19": 3,
+            "21": 3,
+            "22": 3,
+            "23": 3
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto_repository.CategoriaRepository/<GetById>d__3": {
+        "System.Void nuget_fiap_app_produto_repository.CategoriaRepository/<GetById>d__3::MoveNext()": {
+          "Lines": {
+            "26": 11,
+            "27": 11,
+            "29": 11,
+            "30": 11,
+            "31": 11
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto_repository.CategoriaRepository/<Update>d__5": {
+        "System.Void nuget_fiap_app_produto_repository.CategoriaRepository/<Update>d__5::MoveNext()": {
+          "Lines": {
+            "49": 2,
+            "50": 2,
+            "53": 2,
+            "54": 2,
+            "55": 2,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "61": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Fase4\\nuget-fiap-app-produto\\nuget-fiap-app-produto-repository\\ProdutoRepository.cs": {
+      "nuget_fiap_app_produto_repository.ProdutoRepository": {
+        "System.Void nuget_fiap_app_produto_repository.ProdutoRepository::.ctor(nuget_fiap_app_produto_repository.DB.RepositoryDB)": {
+          "Lines": {
+            "26": 10,
+            "27": 10,
+            "28": 10,
+            "29": 10
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto_repository.ProdutoRepository/<>c": {
+        "nuget_fiap_app_produto_common.Models.Produto nuget_fiap_app_produto_repository.ProdutoRepository/<>c::<GetAll>b__3_0(nuget_fiap_app_produto_common.Models.Produto,nuget_fiap_app_produto_common.Models.Categoria)": {
+          "Lines": {
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0
+          },
+          "Branches": []
+        },
+        "nuget_fiap_app_produto_common.Models.Produto nuget_fiap_app_produto_repository.ProdutoRepository/<>c::<GetByIdCategoria>b__4_0(nuget_fiap_app_produto_common.Models.Produto,nuget_fiap_app_produto_common.Models.Categoria)": {
+          "Lines": {
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0
+          },
+          "Branches": []
+        },
+        "nuget_fiap_app_produto_common.Models.Produto nuget_fiap_app_produto_repository.ProdutoRepository/<>c::<GetById>b__7_0(nuget_fiap_app_produto_common.Models.Produto,nuget_fiap_app_produto_common.Models.Categoria)": {
+          "Lines": {
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto_repository.ProdutoRepository/<Create>d__5": {
+        "System.Void nuget_fiap_app_produto_repository.ProdutoRepository/<Create>d__5::MoveNext()": {
+          "Lines": {
+            "61": 0,
+            "62": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "83": 0
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto_repository.ProdutoRepository/<Delete>d__6": {
+        "System.Void nuget_fiap_app_produto_repository.ProdutoRepository/<Delete>d__6::MoveNext()": {
+          "Lines": {
+            "86": 0,
+            "87": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "98": 0
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto_repository.ProdutoRepository/<GetAll>d__3": {
+        "System.Void nuget_fiap_app_produto_repository.ProdutoRepository/<GetAll>d__3::MoveNext()": {
+          "Lines": {
+            "31": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto_repository.ProdutoRepository/<GetById>d__7": {
+        "System.Void nuget_fiap_app_produto_repository.ProdutoRepository/<GetById>d__7::MoveNext()": {
+          "Lines": {
+            "101": 0,
+            "102": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "115": 0,
+            "116": 0
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto_repository.ProdutoRepository/<GetByIdCategoria>d__4": {
+        "System.Void nuget_fiap_app_produto_repository.ProdutoRepository/<GetByIdCategoria>d__4::MoveNext()": {
+          "Lines": {
+            "45": 2,
+            "46": 2,
+            "48": 2,
+            "49": 2,
+            "50": 2,
+            "55": 2,
+            "56": 2,
+            "57": 2,
+            "58": 2
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto_repository.ProdutoRepository/<Update>d__8": {
+        "System.Void nuget_fiap_app_produto_repository.ProdutoRepository/<Update>d__8::MoveNext()": {
+          "Lines": {
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "140": 0,
+            "141": 0,
+            "143": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "149": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Fase4\\nuget-fiap-app-produto\\nuget-fiap-app-produto-repository\\DB\\RepositoryDB.cs": {
+      "nuget_fiap_app_produto_repository.DB.RepositoryDB": {
+        "System.Data.IDbConnection nuget_fiap_app_produto_repository.DB.RepositoryDB::get_Connection()": {
+          "Lines": {
+            "10": 45
+          },
+          "Branches": []
+        },
+        "System.Data.IDbTransaction nuget_fiap_app_produto_repository.DB.RepositoryDB::get_Transaction()": {
+          "Lines": {
+            "11": 35
+          },
+          "Branches": []
+        },
+        "System.Void nuget_fiap_app_produto_repository.DB.RepositoryDB::Dispose()": {
+          "Lines": {
+            "19": 5
+          },
+          "Branches": [
+            {
+              "Line": 19,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 7,
+              "EndOffset": 12,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            }
+          ]
+        },
+        "Npgsql.NpgsqlConnection nuget_fiap_app_produto_repository.DB.RepositoryDB::GetExclusiveConnection()": {
+          "Lines": {
+            "26": 15,
+            "27": 15,
+            "29": 15,
+            "30": 15,
+            "31": 15,
+            "33": 15,
+            "34": 15
+          },
+          "Branches": [
+            {
+              "Line": 29,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 29,
+              "Offset": 18,
+              "EndOffset": 26,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 15
+            },
+            {
+              "Line": 30,
+              "Offset": 38,
+              "EndOffset": 40,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 30,
+              "Offset": 38,
+              "EndOffset": 46,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 15
+            },
+            {
+              "Line": 31,
+              "Offset": 58,
+              "EndOffset": 60,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 31,
+              "Offset": 58,
+              "EndOffset": 66,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 15
+            }
+          ]
+        },
+        "Npgsql.NpgsqlConnection nuget_fiap_app_produto_repository.DB.RepositoryDB::GetConnection(nuget_fiap_app_produto_repository.DB.DTO.Conexao)": {
+          "Lines": {
+            "42": 15,
+            "43": 15,
+            "44": 15,
+            "45": 15,
+            "46": 15
+          },
+          "Branches": []
+        },
+        "System.Void nuget_fiap_app_produto_repository.DB.RepositoryDB::CreateEnvironmentVariables()": {
+          "Lines": {
+            "49": 15,
+            "50": 15,
+            "51": 0,
+            "53": 15,
+            "54": 0,
+            "56": 15,
+            "57": 0,
+            "58": 15
+          },
+          "Branches": [
+            {
+              "Line": 50,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 18,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 15
+            },
+            {
+              "Line": 53,
+              "Offset": 53,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 53,
+              "Offset": 53,
+              "EndOffset": 71,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 15
+            },
+            {
+              "Line": 56,
+              "Offset": 88,
+              "EndOffset": 90,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 56,
+              "Offset": 88,
+              "EndOffset": 106,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 15
+            }
+          ]
+        },
+        "System.Void nuget_fiap_app_produto_repository.DB.RepositoryDB::.ctor()": {
+          "Lines": {
+            "13": 15,
+            "14": 15,
+            "15": 15,
+            "16": 15,
+            "17": 15
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Fase4\\nuget-fiap-app-produto\\nuget-fiap-app-produto-repository\\DB\\UnitOfWork.cs": {
+      "nuget_fiap_app_produto_repository.DB.UnitOfWork": {
+        "System.Void nuget_fiap_app_produto_repository.DB.UnitOfWork::BeginTransaction()": {
+          "Lines": {
+            "16": 10,
+            "17": 10,
+            "18": 10
+          },
+          "Branches": []
+        },
+        "System.Void nuget_fiap_app_produto_repository.DB.UnitOfWork::Commit()": {
+          "Lines": {
+            "21": 10,
+            "22": 10,
+            "23": 10,
+            "24": 10
+          },
+          "Branches": []
+        },
+        "System.Void nuget_fiap_app_produto_repository.DB.UnitOfWork::Rollback()": {
+          "Lines": {
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0
+          },
+          "Branches": []
+        },
+        "System.Void nuget_fiap_app_produto_repository.DB.UnitOfWork::Dispose()": {
+          "Lines": {
+            "32": 15
+          },
+          "Branches": [
+            {
+              "Line": 32,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            },
+            {
+              "Line": 32,
+              "Offset": 12,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 12
+            }
+          ]
+        },
+        "System.Void nuget_fiap_app_produto_repository.DB.UnitOfWork::.ctor(nuget_fiap_app_produto_repository.DB.RepositoryDB)": {
+          "Lines": {
+            "10": 10,
+            "11": 10,
+            "12": 10,
+            "13": 10
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Fase4\\nuget-fiap-app-produto\\nuget-fiap-app-produto-repository\\DB\\DTO\\Conexao.cs": {
+      "nuget_fiap_app_produto_repository.DB.DTO.Conexao": {
+        "System.String nuget_fiap_app_produto_repository.DB.DTO.Conexao::get_Senha()": {
+          "Lines": {
+            "11": 30
+          },
+          "Branches": []
+        },
+        "System.String nuget_fiap_app_produto_repository.DB.DTO.Conexao::get_Instance()": {
+          "Lines": {
+            "12": 30
+          },
+          "Branches": []
+        },
+        "System.String nuget_fiap_app_produto_repository.DB.DTO.Conexao::get_Usuario()": {
+          "Lines": {
+            "13": 30
+          },
+          "Branches": []
+        },
+        "System.Void nuget_fiap_app_produto_repository.DB.DTO.Conexao::.ctor(System.String,System.String,System.String)": {
+          "Lines": {
+            "8": 15,
+            "9": 15
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "nuget-fiap-app-produto-server.dll": {
+    "C:\\Fase4\\nuget-fiap-app-produto\\nuget-fiap-app-produto-server\\Program.cs": {
+      "Program": {
+        "System.Void Program::<Main>$(System.String[])": {
+          "Lines": {
+            "11": 1,
+            "15": 1,
+            "16": 1,
+            "19": 1,
+            "20": 1,
+            "22": 1,
+            "23": 1,
+            "27": 1,
+            "31": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "49": 2,
+            "51": 1,
+            "54": 1,
+            "55": 1,
+            "58": 1,
+            "59": 1,
+            "60": 1,
+            "61": 1,
+            "62": 2,
+            "64": 1,
+            "66": 1,
+            "68": 1,
+            "69": 1,
+            "70": 1,
+            "71": 1,
+            "72": 1,
+            "73": 1,
+            "74": 1,
+            "75": 1,
+            "76": 1,
+            "78": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "nuget-fiap-app-produto.dll": {
+    "C:\\Fase4\\nuget-fiap-app-produto\\nuget-fiap-app-produto\\Services\\CategoriaService.cs": {
+      "nuget_fiap_app_produto.Services.CategoriaService": {
+        "System.Void nuget_fiap_app_produto.Services.CategoriaService::.ctor(nuget_fiap_app_produto_common.Interfaces.Repository.ICategoriaRepository,nuget_fiap_app_produto_common.Interfaces.Services.IProdutoService,nuget_fiap_app_produto_repository.Interface.IUnitOfWork)": {
+          "Lines": {
+            "15": 16,
+            "16": 16,
+            "17": 16,
+            "18": 16,
+            "19": 16,
+            "20": 16,
+            "21": 16,
+            "22": 16
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto.Services.CategoriaService/<CanDeleteCategoria>d__9": {
+        "System.Void nuget_fiap_app_produto.Services.CategoriaService/<CanDeleteCategoria>d__9::MoveNext()": {
+          "Lines": {
+            "141": 4,
+            "143": 4,
+            "145": 4,
+            "146": 1,
+            "148": 1,
+            "152": 3,
+            "153": 4
+          },
+          "Branches": [
+            {
+              "Line": 145,
+              "Offset": 157,
+              "EndOffset": 159,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 145,
+              "Offset": 157,
+              "EndOffset": 172,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 145,
+              "Offset": 177,
+              "EndOffset": 179,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 145,
+              "Offset": 177,
+              "EndOffset": 184,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 3
+            }
+          ]
+        }
+      },
+      "nuget_fiap_app_produto.Services.CategoriaService/<Create>d__4": {
+        "System.Void nuget_fiap_app_produto.Services.CategoriaService/<Create>d__4::MoveNext()": {
+          "Lines": {
+            "25": 9,
+            "27": 9,
+            "28": 9,
+            "29": 9,
+            "31": 9,
+            "32": 9,
+            "33": 9,
+            "34": 9,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "47": 9
+          },
+          "Branches": [
+            {
+              "Line": 31,
+              "Offset": 183,
+              "EndOffset": 185,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 9
+            },
+            {
+              "Line": 31,
+              "Offset": 183,
+              "EndOffset": 212,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "nuget_fiap_app_produto.Services.CategoriaService/<Delete>d__5": {
+        "System.Void nuget_fiap_app_produto.Services.CategoriaService/<Delete>d__5::MoveNext()": {
+          "Lines": {
+            "50": 4,
+            "51": 4,
+            "52": 1,
+            "53": 1,
+            "57": 3,
+            "58": 3,
+            "59": 3,
+            "61": 3,
+            "62": 3,
+            "63": 3,
+            "64": 3,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "77": 3
+          },
+          "Branches": [
+            {
+              "Line": 51,
+              "Offset": 150,
+              "EndOffset": 152,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 51,
+              "Offset": 150,
+              "EndOffset": 164,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            },
+            {
+              "Line": 61,
+              "Offset": 334,
+              "EndOffset": 336,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 3
+            },
+            {
+              "Line": 61,
+              "Offset": 334,
+              "EndOffset": 358,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "nuget_fiap_app_produto.Services.CategoriaService/<GetAll>d__6": {
+        "System.Void nuget_fiap_app_produto.Services.CategoriaService/<GetAll>d__6::MoveNext()": {
+          "Lines": {
+            "80": 3,
+            "82": 3,
+            "83": 3,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "89": 3
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto.Services.CategoriaService/<GetById>d__7": {
+        "System.Void nuget_fiap_app_produto.Services.CategoriaService/<GetById>d__7::MoveNext()": {
+          "Lines": {
+            "92": 6,
+            "94": 6,
+            "95": 6,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "101": 6
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto.Services.CategoriaService/<Update>d__8": {
+        "System.Void nuget_fiap_app_produto.Services.CategoriaService/<Update>d__8::MoveNext()": {
+          "Lines": {
+            "104": 3,
+            "106": 3,
+            "107": 3,
+            "109": 3,
+            "110": 1,
+            "111": 1,
+            "117": 2,
+            "119": 2,
+            "120": 2,
+            "122": 2,
+            "123": 2,
+            "124": 2,
+            "125": 2,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "138": 3
+          },
+          "Branches": [
+            {
+              "Line": 109,
+              "Offset": 185,
+              "EndOffset": 187,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 109,
+              "Offset": 185,
+              "EndOffset": 195,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 122,
+              "Offset": 377,
+              "EndOffset": 379,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 122,
+              "Offset": 377,
+              "EndOffset": 401,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Fase4\\nuget-fiap-app-produto\\nuget-fiap-app-produto\\Services\\ProdutoService.cs": {
+      "nuget_fiap_app_produto.Services.ProdutoService": {
+        "System.Void nuget_fiap_app_produto.Services.ProdutoService::.ctor(nuget_fiap_app_produto_common.Interfaces.Repository.IProdutoRepository,nuget_fiap_app_produto_repository.Interface.IUnitOfWork)": {
+          "Lines": {
+            "13": 21,
+            "14": 21,
+            "15": 21,
+            "16": 21,
+            "17": 21
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto.Services.ProdutoService/<Create>d__3": {
+        "System.Void nuget_fiap_app_produto.Services.ProdutoService/<Create>d__3::MoveNext()": {
+          "Lines": {
+            "20": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "42": 1
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 183,
+              "EndOffset": 185,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 26,
+              "Offset": 183,
+              "EndOffset": 212,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "nuget_fiap_app_produto.Services.ProdutoService/<Delete>d__4": {
+        "System.Void nuget_fiap_app_produto.Services.ProdutoService/<Delete>d__4::MoveNext()": {
+          "Lines": {
+            "45": 1,
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "51": 1,
+            "52": 1,
+            "53": 1,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "66": 1
+          },
+          "Branches": [
+            {
+              "Line": 50,
+              "Offset": 180,
+              "EndOffset": 182,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 50,
+              "Offset": 180,
+              "EndOffset": 204,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "nuget_fiap_app_produto.Services.ProdutoService/<GetAll>d__5": {
+        "System.Void nuget_fiap_app_produto.Services.ProdutoService/<GetAll>d__5::MoveNext()": {
+          "Lines": {
+            "69": 1,
+            "70": 1,
+            "71": 1
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto.Services.ProdutoService/<GetById>d__6": {
+        "System.Void nuget_fiap_app_produto.Services.ProdutoService/<GetById>d__6::MoveNext()": {
+          "Lines": {
+            "74": 0,
+            "76": 0,
+            "77": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "83": 0
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto.Services.ProdutoService/<GetByIdCategoria>d__7": {
+        "System.Void nuget_fiap_app_produto.Services.ProdutoService/<GetByIdCategoria>d__7::MoveNext()": {
+          "Lines": {
+            "86": 5,
+            "87": 5,
+            "88": 5
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto.Services.ProdutoService/<Update>d__8": {
+        "System.Void nuget_fiap_app_produto.Services.ProdutoService/<Update>d__8::MoveNext()": {
+          "Lines": {
+            "91": 1,
+            "94": 1,
+            "95": 1,
+            "97": 1,
+            "98": 0,
+            "99": 0,
+            "105": 1,
+            "106": 1,
+            "107": 1,
+            "108": 1,
+            "109": 1,
+            "111": 1,
+            "112": 1,
+            "114": 1,
+            "115": 1,
+            "116": 1,
+            "117": 1,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "130": 1
+          },
+          "Branches": [
+            {
+              "Line": 97,
+              "Offset": 185,
+              "EndOffset": 187,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 97,
+              "Offset": 185,
+              "EndOffset": 195,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 114,
+              "Offset": 469,
+              "EndOffset": 471,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 114,
+              "Offset": 469,
+              "EndOffset": 493,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Fase4\\nuget-fiap-app-produto\\nuget-fiap-app-produto\\Controllers\\ProdutoController.cs": {
+      "nuget_fiap_app_produto.Controllers.ProdutoController": {
+        "System.Void nuget_fiap_app_produto.Controllers.ProdutoController::.ctor(nuget_fiap_app_produto_common.Interfaces.Services.IProdutoService)": {
+          "Lines": {
+            "16": 6,
+            "17": 6,
+            "18": 6,
+            "19": 6
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto.Controllers.ProdutoController/<Delete>d__5": {
+        "System.Void nuget_fiap_app_produto.Controllers.ProdutoController/<Delete>d__5::MoveNext()": {
+          "Lines": {
+            "132": 1,
+            "134": 1,
+            "135": 1,
+            "137": 1,
+            "138": 1,
+            "139": 1,
+            "142": 0,
+            "143": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "150": 1
+          },
+          "Branches": [
+            {
+              "Line": 137,
+              "Offset": 163,
+              "EndOffset": 165,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 137,
+              "Offset": 163,
+              "EndOffset": 180,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "nuget_fiap_app_produto.Controllers.ProdutoController/<GetAll>d__2": {
+        "System.Void nuget_fiap_app_produto.Controllers.ProdutoController/<GetAll>d__2::MoveNext()": {
+          "Lines": {
+            "31": 1,
+            "33": 1,
+            "34": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "45": 0,
+            "46": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "53": 1
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 160,
+              "EndOffset": 162,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 36,
+              "Offset": 160,
+              "EndOffset": 175,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 36,
+              "Offset": 180,
+              "EndOffset": 182,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 36,
+              "Offset": 180,
+              "EndOffset": 203,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 40,
+              "Offset": 216,
+              "EndOffset": 218,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 40,
+              "Offset": 216,
+              "EndOffset": 233,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "nuget_fiap_app_produto.Controllers.ProdutoController/<GetById>d__6": {
+        "System.Void nuget_fiap_app_produto.Controllers.ProdutoController/<GetById>d__6::MoveNext()": {
+          "Lines": {
+            "167": 1,
+            "169": 1,
+            "170": 1,
+            "172": 1,
+            "173": 1,
+            "174": 1,
+            "177": 0,
+            "178": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "185": 1
+          },
+          "Branches": [
+            {
+              "Line": 172,
+              "Offset": 173,
+              "EndOffset": 175,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 172,
+              "Offset": 173,
+              "EndOffset": 196,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "nuget_fiap_app_produto.Controllers.ProdutoController/<GetByIdCategoria>d__3": {
+        "System.Void nuget_fiap_app_produto.Controllers.ProdutoController/<GetByIdCategoria>d__3::MoveNext()": {
+          "Lines": {
+            "67": 1,
+            "69": 1,
+            "70": 1,
+            "72": 1,
+            "73": 1,
+            "74": 1,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "81": 0,
+            "82": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "89": 1
+          },
+          "Branches": [
+            {
+              "Line": 72,
+              "Offset": 166,
+              "EndOffset": 168,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 72,
+              "Offset": 166,
+              "EndOffset": 181,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 72,
+              "Offset": 186,
+              "EndOffset": 188,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 72,
+              "Offset": 186,
+              "EndOffset": 209,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 76,
+              "Offset": 222,
+              "EndOffset": 224,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 76,
+              "Offset": 222,
+              "EndOffset": 239,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "nuget_fiap_app_produto.Controllers.ProdutoController/<Post>d__4": {
+        "System.Void nuget_fiap_app_produto.Controllers.ProdutoController/<Post>d__4::MoveNext()": {
+          "Lines": {
+            "105": 1,
+            "107": 1,
+            "108": 1,
+            "109": 1,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "115": 1
+          },
+          "Branches": []
+        }
+      },
+      "nuget_fiap_app_produto.Controllers.ProdutoController/<Put>d__7": {
+        "System.Void nuget_fiap_app_produto.Controllers.ProdutoController/<Put>d__7::MoveNext()": {
+          "Lines": {
+            "204": 1,
+            "206": 1,
+            "208": 1,
+            "210": 1,
+            "211": 1,
+            "212": 1,
+            "215": 0,
+            "216": 0,
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "223": 1
+          },
+          "Branches": [
+            {
+              "Line": 210,
+              "Offset": 169,
+              "EndOffset": 171,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 210,
+              "Offset": 169,
+              "EndOffset": 186,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Fase4\\nuget-fiap-app-produto\\nuget-fiap-app-produto\\Controllers\\CategoriaController.cs": {
+      "API.Controllers.CategoriaController": {
+        "System.Void API.Controllers.CategoriaController::.ctor(nuget_fiap_app_produto_common.Interfaces.Services.ICategoriaService)": {
+          "Lines": {
+            "17": 10,
+            "18": 10,
+            "19": 10,
+            "20": 10
+          },
+          "Branches": []
+        }
+      },
+      "API.Controllers.CategoriaController/<Delete>d__6": {
+        "System.Void API.Controllers.CategoriaController/<Delete>d__6::MoveNext()": {
+          "Lines": {
+            "168": 2,
+            "170": 2,
+            "171": 2,
+            "173": 2,
+            "174": 2,
+            "175": 2,
+            "178": 0,
+            "179": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "186": 2
+          },
+          "Branches": [
+            {
+              "Line": 173,
+              "Offset": 163,
+              "EndOffset": 165,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 173,
+              "Offset": 163,
+              "EndOffset": 180,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "API.Controllers.CategoriaController/<GetAll>d__2": {
+        "System.Void API.Controllers.CategoriaController/<GetAll>d__2::MoveNext()": {
+          "Lines": {
+            "32": 2,
+            "34": 2,
+            "35": 2,
+            "37": 2,
+            "38": 2,
+            "39": 2,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "46": 0,
+            "47": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "54": 2
+          },
+          "Branches": [
+            {
+              "Line": 37,
+              "Offset": 160,
+              "EndOffset": 162,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 37,
+              "Offset": 160,
+              "EndOffset": 175,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 37,
+              "Offset": 180,
+              "EndOffset": 182,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 37,
+              "Offset": 180,
+              "EndOffset": 203,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 41,
+              "Offset": 216,
+              "EndOffset": 218,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 41,
+              "Offset": 216,
+              "EndOffset": 233,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "API.Controllers.CategoriaController/<GetById>d__3": {
+        "System.Void API.Controllers.CategoriaController/<GetById>d__3::MoveNext()": {
+          "Lines": {
+            "71": 2,
+            "73": 2,
+            "74": 2,
+            "76": 2,
+            "77": 1,
+            "78": 1,
+            "81": 1,
+            "82": 1,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "89": 2
+          },
+          "Branches": [
+            {
+              "Line": 76,
+              "Offset": 173,
+              "EndOffset": 175,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 76,
+              "Offset": 173,
+              "EndOffset": 196,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "API.Controllers.CategoriaController/<Post>d__4": {
+        "System.Void API.Controllers.CategoriaController/<Post>d__4::MoveNext()": {
+          "Lines": {
+            "104": 2,
+            "106": 2,
+            "107": 2,
+            "108": 2,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "114": 2
+          },
+          "Branches": []
+        }
+      },
+      "API.Controllers.CategoriaController/<Put>d__5": {
+        "System.Void API.Controllers.CategoriaController/<Put>d__5::MoveNext()": {
+          "Lines": {
+            "133": 2,
+            "135": 2,
+            "136": 2,
+            "138": 2,
+            "139": 1,
+            "140": 1,
+            "143": 1,
+            "144": 1,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "151": 2
+          },
+          "Branches": [
+            {
+              "Line": 138,
+              "Offset": 169,
+              "EndOffset": 171,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 138,
+              "Offset": 169,
+              "EndOffset": 186,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    }
+  }
+}

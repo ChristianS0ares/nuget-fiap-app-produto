@@ -9,7 +9,7 @@ using nuget_fiap_app_produto_common.Models;
 using nuget_fiap_app_produto.Controllers;
 using System;
 
-namespace nuget_fiap_app_produto_test.Controllers
+namespace nuget_fiap_app_produto_test.Controller
 {
     public class ProdutoControllerTest
     {

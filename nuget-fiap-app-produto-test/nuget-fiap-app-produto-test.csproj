@@ -20,10 +20,6 @@
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="7.0.18" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
 		<PackageReference Include="Moq" Version="4.20.70" />
-		<PackageReference Include="SpecFlow" Version="3.9.74" />
-		<PackageReference Include="SpecFlow.Assist.Dynamic" Version="1.4.2" />
-		<PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.74" />
-		<PackageReference Include="SpecFlow.xUnit" Version="3.9.74" />
 		<PackageReference Include="xunit" Version="2.7.0" />
 		<PackageReference Include="xunit.runner.visualstudio" Version="2.5.7">
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -45,6 +41,10 @@
     <None Update="xunit.runner.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>	
+
+  <ItemGroup>
+    <Folder Include="Features\" />
   </ItemGroup>
 
 </Project>

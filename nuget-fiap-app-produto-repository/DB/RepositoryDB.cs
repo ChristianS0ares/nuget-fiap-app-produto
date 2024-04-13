@@ -48,7 +48,7 @@ namespace nuget_fiap_app_produto_repository.DB
         private static void CreateEnvironmentVariables()
         {
             if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("DB_PASSWORD")))
-                Environment.SetEnvironmentVariable("DB_PASSWORD", "123456");
+                Environment.SetEnvironmentVariable("DB_PASSWORD", "123456789");
 
             if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("DB_USER")))
                 Environment.SetEnvironmentVariable("DB_USER", "postgres");

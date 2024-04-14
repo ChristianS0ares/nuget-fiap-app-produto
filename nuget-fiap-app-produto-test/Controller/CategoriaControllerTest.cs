@@ -5,7 +5,7 @@ using Xunit;
 using FluentAssertions;
 using nuget_fiap_app_produto_common.Interfaces.Services;
 using nuget_fiap_app_produto_common.Models;
-using API.Controllers; // Substitua pela namespace correta do seu CategoriaController
+using nuget_fiap_app_produto.Controllers;
 
 namespace nuget_fiap_app_produto_test.Controller
 {

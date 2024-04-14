@@ -15,14 +15,7 @@ namespace nuget_fiap_app_produto_test.Repository
     {
         public CategoriaRepositoryIT()
         {
-            defineAmbienteDeTestes();
-        }
-        private static void defineAmbienteDeTestes()
-        {
-            // Definindo variáveis de ambiente
-            Environment.SetEnvironmentVariable("DB_PASSWORD", "123456789");
-            Environment.SetEnvironmentVariable("DB_USER", "postgres");
-            Environment.SetEnvironmentVariable("DB_HOST", "localhost:5432");
+            
         }
 
         [Fact]
@@ -42,7 +35,6 @@ namespace nuget_fiap_app_produto_test.Repository
         [Fact]
         public async Task deveRecuperarTodasAsCategorias()
         {
-            defineAmbienteDeTestes();
             var session = new RepositoryDB();
             var repository = new CategoriaRepository(session);
 
@@ -54,7 +46,6 @@ namespace nuget_fiap_app_produto_test.Repository
         [Fact]
         public async Task deveRecuperarCategoriaPorId()
         {
-            defineAmbienteDeTestes();
             var session = new RepositoryDB();
             var repository = new CategoriaRepository(session);
 
@@ -67,7 +58,6 @@ namespace nuget_fiap_app_produto_test.Repository
         [Fact]
         public async Task devePermitirAtualizarCategoria()
         {
-            defineAmbienteDeTestes();
             var session = new RepositoryDB();
             var repository = new CategoriaRepository(session);
 
@@ -84,7 +74,6 @@ namespace nuget_fiap_app_produto_test.Repository
         [Fact]
         public async Task devePermitirExcluirCategoria()
         {
-            defineAmbienteDeTestes();
             var session = new RepositoryDB();
             var repository = new CategoriaRepository(session);
 

@@ -65,5 +65,14 @@ namespace nuget_fiap_app_produto_test.Controller
 
             response.StatusCode.Should().Be(HttpStatusCode.NoContent);
         }
+
+        [Fact]
+        public async Task naoDevePermitirExcluirUmaCategoriaInexistente()
+        {
+            // Assumindo que a categoria com ID -1 não existe
+            var response = await _client.DeleteAsync("/Categoria/-1");
+
+            response.StatusCode.Should().Be(HttpStatusCode.NotFound);
+        }
     }
 }

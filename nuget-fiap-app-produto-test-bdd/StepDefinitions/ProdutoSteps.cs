@@ -1,7 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc.Testing;
+﻿using FluentAssertions;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
 using nuget_fiap_app_produto_common.Models;
 using System.Net.Http.Json;
-
+using TechTalk.SpecFlow;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace nuget_fiap_app_produto_test.BDD
 {
@@ -21,7 +26,7 @@ namespace nuget_fiap_app_produto_test.BDD
         [Given(@"que eu adicionei um produto com o nome ""(.*)"" e preço ""(.*)""")]
         public async Task DadoQueEuAdicioneiUmProdutoComONomeEPreco(string nome, decimal preco)
         {
-            var novoProduto = new { Nome = nome, Preco = preco };
+            var novoProduto = new Produto (){ Id =0, Nome = nome, Preco = preco, Descricao = "", Categoria = new Categoria() {Id = 1, Nome = "Lanche" }, UrlImagem = "" };
             _response = await _client.PostAsJsonAsync(_baseUrl, novoProduto);
             _response.EnsureSuccessStatusCode();
 
@@ -41,7 +46,7 @@ namespace nuget_fiap_app_produto_test.BDD
         [Given(@"que eu adicionei um novo produto com o nome ""(.*)""")]
         public async Task DadoQueEuAdicioneiUmProdutoComONome(string nome)
         {
-            var novoProduto = new { Nome = nome };
+            var novoProduto = new Produto() { Id = 0, Nome = nome, Preco = 0, Descricao = "", Categoria = new Categoria() { Id = 1, Nome = "Lanche" }, UrlImagem = "" };
             _response = await _client.PostAsJsonAsync(_baseUrl, novoProduto);
             _response.EnsureSuccessStatusCode();
 
@@ -61,7 +66,7 @@ namespace nuget_fiap_app_produto_test.BDD
         [Given(@"que eu adicionei o produto com o nome ""(.*)""")]
         public async Task DadoQueEuAdicioneiOProdutoComONome(string nome)
         {
-            var novoProduto = new { Nome = nome };
+            var novoProduto = new Produto() { Id = 0, Nome = nome, Preco = 0, Descricao = "", Categoria = new Categoria() { Id = 1, Nome = "Lanche" }, UrlImagem = "" };
             _response = await _client.PostAsJsonAsync(_baseUrl, novoProduto);
             _response.EnsureSuccessStatusCode();
 
@@ -87,7 +92,7 @@ namespace nuget_fiap_app_produto_test.BDD
         [When(@"que eu adiciono um produto com o nome ""(.*)"" e preço ""(.*)""")]
         public async Task QuandoEuAdicionoUmProdutoComONomeEPreco(string nome, decimal preco)
         {
-            var novoProduto = new { Nome = nome, Preco = preco };
+            var novoProduto = new Produto() { Id = 0, Nome = nome, Preco = preco, Descricao = "", Categoria = new Categoria() { Id = 1, Nome = "Lanche" }, UrlImagem = "" };
             _response = await _client.PostAsJsonAsync(_baseUrl, novoProduto);
         }
 
@@ -100,7 +105,7 @@ namespace nuget_fiap_app_produto_test.BDD
         [When(@"eu atualizo o produto ""(.*)"" para ter o nome ""(.*)"" e preço ""(.*)""")]
         public async Task QuandoEuAtualizoOProdutoParaTerONomeEPreco(string nomeOriginal, string novoNome, decimal novoPreco)
         {
-            var produtoAtualizado = new { Nome = novoNome, Preco = novoPreco };
+            var produtoAtualizado = new Produto() { Id = 0, Nome = novoNome, Preco = novoPreco, Descricao = "", Categoria = new Categoria() { Id = 1, Nome = "Lanche" }, UrlImagem = "" };
             _response = await _client.PutAsJsonAsync($"{_baseUrl}/{_produtoCriado.Id}", produtoAtualizado);
             _response.EnsureSuccessStatusCode();
 

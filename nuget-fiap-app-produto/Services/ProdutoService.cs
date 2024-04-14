@@ -20,23 +20,11 @@ namespace nuget_fiap_app_produto.Services
         {
             try
             {
-                _unitOfWork.BeginTransaction();
                 int produtoId = await _produtoRepository.Create(produto);
-
-                if (produtoId > 0)
-                {
-                    _unitOfWork.Commit();
-                    return produtoId;
-                }
-                else
-                {
-                    _unitOfWork.Rollback();
-                    return 0;
-                }
+                return produtoId;
             }
             catch (Exception ex)
             {
-                _unitOfWork.Rollback();
                 throw new Exception(ex.Message);
             }
         }
@@ -45,22 +33,11 @@ namespace nuget_fiap_app_produto.Services
         {
             try
             {
-                _unitOfWork.BeginTransaction();
                 var result = await _produtoRepository.Delete(id);
-                if (result)
-                {
-                    _unitOfWork.Commit();
-                    return true;
-                }
-                else
-                {
-                    _unitOfWork.Rollback();
-                    return false;
-                }
+                return result;
             }
             catch (Exception ex)
             {
-                _unitOfWork.Rollback();
                 throw new Exception(ex.Message);
             }
         }
@@ -108,25 +85,14 @@ namespace nuget_fiap_app_produto.Services
                 existingProduct.UrlImagem = produto.UrlImagem;
                 existingProduct.Categoria = produto.Categoria;
 
-                _unitOfWork.BeginTransaction();
                 bool updated = await _produtoRepository.Update(existingProduct);
-
-                if (updated)
-                {
-                    _unitOfWork.Commit();
-                    return true;
-                }
-                else
-                {
-                    _unitOfWork.Rollback();
-                    return false;
-                }
+                return updated;
             }
             catch (Exception ex)
             {
-                _unitOfWork.Rollback();
                 throw new Exception(ex.Message);
             }
         }
     }
 }
+

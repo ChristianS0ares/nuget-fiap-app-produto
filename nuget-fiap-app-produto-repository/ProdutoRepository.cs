@@ -70,31 +70,17 @@ namespace nuget_fiap_app_produto_repository
                 url_imagem = produto.UrlImagem,
                 id_categoria = idCategoria
             };
-
-            try
-            {
-                int produtoId = await _session.Connection.ExecuteScalarAsync<int>(sql, parametros);
-                return produtoId;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            
+            int produtoId = await _session.Connection.ExecuteScalarAsync<int>(sql, parametros);
+            return produtoId;            
         }
 
         public async Task<bool> Delete(int id)
         {
             string sql = "DELETE FROM public.tbl_produto WHERE id = @id";
-
-            try
-            {
-                int rowsAffected = await _session.Connection.ExecuteAsync(sql, new { id });
-                return rowsAffected > 0; // Retorna true se uma linha foi afetada (produto excluído).
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            
+            int rowsAffected = await _session.Connection.ExecuteAsync(sql, new { id });
+            return rowsAffected > 0; // Retorna true se uma linha foi afetada (produto excluído).
         }
 
         public async Task<Produto> GetById(int id)
@@ -136,16 +122,8 @@ namespace nuget_fiap_app_produto_repository
                 id_categoria = produto.Categoria.Id
             };
 
-            try
-            {
-                int rowsAffected = await _session.Connection.ExecuteAsync(sql, parametros);
-
-                return rowsAffected > 0; // Retorna true se alguma linha foi afetada (atualização bem-sucedida).
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            int rowsAffected = await _session.Connection.ExecuteAsync(sql, parametros);
+            return rowsAffected > 0; // Retorna true se alguma linha foi afetada (atualização bem-sucedida).
         }
     }
 }

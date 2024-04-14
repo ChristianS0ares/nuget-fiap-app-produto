@@ -59,6 +59,23 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        public async Task ConsultarPorIdCategoria_DeveRetornar404MptFound_QuandoProdutosDaCategoriaNaoExistirem()
+        {
+            // Arrange
+            int idCategoria = 1;
+            int idInexistenteCategoria = 2;
+            var produtos = new List<Produto> { new Produto { Id = 1, Nome = "Produto 1", Preco = 10.00M, Descricao = "Decrição do Produto 1", UrlImagem = "", Categoria = new Categoria() { Id = 1, Nome = "Lanche" } } };
+            _produtoServiceMock.Setup(service => service.GetByIdCategoria(idCategoria)).ReturnsAsync(produtos);
+
+            // Act
+            var resultado = await _controller.GetByIdCategoria(idInexistenteCategoria);
+
+            // Assert
+            var notFoundResult = resultado.Should().BeOfType<OkObjectResult>().Subject;
+
+        }
+
+        [Fact]
         public async Task Criar_DeveRetornar201Created_QuandoProdutoForCriado()
         {
             // Arrange
@@ -114,6 +131,20 @@ namespace nuget_fiap_app_produto_test.Controller
             // Assert
             var okResult = resultado.Should().BeOfType<OkObjectResult>().Subject;
             okResult.Value.Should().BeEquivalentTo(produto);
+        }
+
+        [Fact]
+        public async Task ConsultarPorId_DeveRetornar404NotFound_QuandoProdutoExistir()
+        {
+            // Arrange
+            var idInexistente = 2;
+            _produtoServiceMock.Setup(service => service.GetById(idInexistente)).ReturnsAsync((Produto)null); // Configura o mock para retornar null, simulando um produto não encontrado.
+
+            // Act
+            var resultado = await _controller.GetById(idInexistente);
+
+            // Assert
+            var notFoundResult = resultado.Should().BeOfType<NotFoundResult>().Subject;
         }
     }
 }

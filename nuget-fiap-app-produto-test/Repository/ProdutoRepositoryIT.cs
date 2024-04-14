@@ -9,15 +9,7 @@ namespace nuget_fiap_app_produto_test.Repository
     {
         public ProdutoRepositoryIT()
         {
-            DefineAmbienteDeTestes();
-        }
 
-        private static void DefineAmbienteDeTestes()
-        {
-            // Definindo variáveis de ambiente para conexão com o banco
-            Environment.SetEnvironmentVariable("DB_PASSWORD", "123456789");
-            Environment.SetEnvironmentVariable("DB_USER", "postgres");
-            Environment.SetEnvironmentVariable("DB_HOST", "localhost:5432");
         }
 
         [Fact]
@@ -46,7 +38,6 @@ namespace nuget_fiap_app_produto_test.Repository
         [Fact]
         public async Task deveRecuperarTodosOsProdutos()
         {
-            DefineAmbienteDeTestes();
             var session = new RepositoryDB();
             var repository = new ProdutoRepository(session);
 
@@ -58,7 +49,6 @@ namespace nuget_fiap_app_produto_test.Repository
         [Fact]
         public async Task deveRecuperarProdutoPorId()
         {
-            DefineAmbienteDeTestes();
             var session = new RepositoryDB();
             var repository = new ProdutoRepository(session);
 
@@ -71,7 +61,6 @@ namespace nuget_fiap_app_produto_test.Repository
         [Fact]
         public async Task devePermitirAtualizarProduto()
         {
-            DefineAmbienteDeTestes();
             var session = new RepositoryDB();
             var repository = new ProdutoRepository(session);
 
@@ -97,7 +86,6 @@ namespace nuget_fiap_app_produto_test.Repository
         [Fact]
         public async Task devePermitirExcluirProduto()
         {
-            DefineAmbienteDeTestes();
             var session = new RepositoryDB();
             var repository = new ProdutoRepository(session);
 

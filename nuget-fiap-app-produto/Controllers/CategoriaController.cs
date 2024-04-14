@@ -5,7 +5,7 @@ using nuget_fiap_app_produto_common.Interfaces.Services;
 using nuget_fiap_app_produto_common.Models;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace API.Controllers
+namespace nuget_fiap_app_produto.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -34,18 +34,7 @@ namespace API.Controllers
             {
                 var categorias = await _categoriaService.GetAll();
 
-                if (categorias != null && categorias.Any())
-                {
-                    return Ok(categorias); // Retorna 200 OK com as categorias recuperadas.
-                }
-                else if (categorias != null)
-                {
-                    return NotFound(); // Retorna 404 Not Found se não houver categorias encontradas.
-                }
-                else
-                {
-                    return StatusCode(500, "Erro interno do servidor"); // Retorna 500 Internal Server Error em caso de erro interno do servidor.
-                }
+                return Ok(categorias); // Retorna 200 OK com as categorias recuperadas.
             }
             catch (Exception ex)
             {
@@ -73,14 +62,11 @@ namespace API.Controllers
             {
                 var categoria = await _categoriaService.GetById(id);
                 
-                if (categoria != null)
-                {
-                    return Ok(categoria); // Retorna 200 OK com a categoria recuperada.
-                }
-                else
+                if (categoria == null)
                 {
                     return NotFound(); // Retorna 404 Not Found se a categoria não for encontrada.
                 }
+                return Ok(categoria); // Retorna 200 OK com a categoria recuperada.
             }
             catch (Exception ex)
             {
@@ -135,14 +121,11 @@ namespace API.Controllers
             {
                 bool updated = await _categoriaService.Update(categoria, id);
 
-                if (updated)
-                {
-                    return Ok(); // Retorna 200 OK se a atualização for bem-sucedida.
-                }
-                else
+                if (!updated)
                 {
                     return NotFound(); // Retorna 404 Not Found se a categoria não for encontrada.
                 }
+                return Ok(); // Retorna 200 OK se a atualização for bem-sucedida.
             }
             catch (Exception ex)
             {
@@ -170,14 +153,11 @@ namespace API.Controllers
             {
                 bool result = await _categoriaService.Delete(id);
 
-                if (result)
-                {
-                    return NoContent(); // Retorna 204 No Content se a categoria for excluída com sucesso.
-                }
-                else
+                if (!result)
                 {
                     return NotFound(); // Retorna 404 Not Found se a categoria não for encontrada.
                 }
+                return NoContent(); // Retorna 204 No Content se a categoria for excluída com sucesso.
             }
             catch (Exception ex)
             {

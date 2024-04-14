@@ -60,12 +60,12 @@ Para facilitar o consumo e teste da API, disponibilizamos uma [coleção](api-pr
 
 #### Listar Todas as Categorias
 - Método: GET
-- URL: http://<url>/Categoria
+- URL: http://url-api/Categoria
 - Descrição: Retorna todas as categorias cadastradas no sistema.
 
 #### Criar Categoria
 - Método: POST
-- URL: http://<url>/Categoria
+- URL: http://url-api/Categoria
 - Body:
 ```bash
 {
@@ -77,12 +77,12 @@ Para facilitar o consumo e teste da API, disponibilizamos uma [coleção](api-pr
 
 #### Obter Categoria por ID
 - Método: GET
-- URL: http://<url>/Categoria/1
+- URL: http://url-api/Categoria/1
 - Descrição: Retorna os detalhes de uma categoria específica.
 
 #### Atualizar Categoria
 - Método: PUT
-- URL: http://<url>/Categoria/5
+- URL: http://url-api/Categoria/5
 - Body:
 ```bash
 {
@@ -94,18 +94,18 @@ Para facilitar o consumo e teste da API, disponibilizamos uma [coleção](api-pr
 
 #### Excluir Categoria
 - Método: DELETE
-- URL: http://<url>/Categoria/5
+- URL: http://url-api/Categoria/5
 - Descrição: Remove uma categoria do sistema.
 
 ### Produtos
 #### Listar Todos os Produtos
 - Método: GET
-- URL: http://<url>/Produto
+- URL: http://url-api/Produto
 - Descrição: Retorna todos os produtos cadastrados no sistema.
 
 #### Criar Produto
 - Método: POST
-- URL: http://<url>/Produto
+- URL: http://url-api/Produto
 - Body:
 ```bash
 {
@@ -121,12 +121,12 @@ Para facilitar o consumo e teste da API, disponibilizamos uma [coleção](api-pr
 
 #### Obter Produto por ID
 - Método: GET
-- URL: http://<url>/Produto/1
+- URL: http://url-api/Produto/1
 - Descrição: Retorna os detalhes de um produto específico.
 
 #### Atualizar Produto
 - Método: PUT
-- URL: http://<url>/Produto/1
+- URL: http://url-api/Produto/1
 - Body:
 ```bash
 {
@@ -143,10 +143,10 @@ Para facilitar o consumo e teste da API, disponibilizamos uma [coleção](api-pr
 
 #### Excluir Produto
 - Método: DELETE
-- URL: http://<url>/Produto/31
+- URL: http://url-api/Produto/31
 - Descrição: Remove um produto do sistema.
 
 #### Listar Produtos por Categoria
 - Método: GET
-- URL: http://<url>/Produto/Categoria/2
+- URL: http://url-api/Produto/Categoria/2
 - Descrição: Retorna todos os produtos de uma categoria específica.

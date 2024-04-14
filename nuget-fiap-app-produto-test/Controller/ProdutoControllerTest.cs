@@ -23,6 +23,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task ConsultarTodos_DeveRetornar200OK_QuandoProdutosExistirem()
         {
             // Arrange
@@ -43,6 +44,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task ConsultarPorIdCategoria_DeveRetornar200OK_QuandoProdutosDaCategoriaExistirem()
         {
             // Arrange
@@ -59,6 +61,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task ConsultarPorIdCategoria_DeveRetornar404MptFound_QuandoProdutosDaCategoriaNaoExistirem()
         {
             // Arrange
@@ -76,6 +79,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task Criar_DeveRetornar201Created_QuandoProdutoForCriado()
         {
             // Arrange
@@ -92,6 +96,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task Deletar_DeveRetornar204NoContent_QuandoProdutoForDeletado()
         {
             // Arrange
@@ -105,6 +110,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task Atualizar_DeveRetornar200OK_QuandoProdutoForAtualizado()
         {
             // Arrange
@@ -119,6 +125,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task ConsultarPorId_DeveRetornar200OK_QuandoProdutoExistir()
         {
             // Arrange
@@ -134,6 +141,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task ConsultarPorId_DeveRetornar404NotFound_QuandoProdutoExistir()
         {
             // Arrange

@@ -22,6 +22,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirCriarProduto()
         {
             var novoProduto = new Produto
@@ -44,6 +45,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirExcluirProduto()
         {
             var produtoTeste = new Produto
@@ -67,6 +69,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task deveRecuperarTodosOsProdutos()
         {
             await _produtoService.Create(new Produto { Id = 0, Nome = "Produto Teste 1", Preco = 200, Descricao = "Produto 1", UrlImagem = "url1", Categoria = new Categoria { Id = 1, Nome = "Lanche" } });
@@ -80,6 +83,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task deveRecuperarProdutoPorId()
         {
             var produtoTeste = new Produto { Id = 0, Nome = "Produto Para Recuperar", Preco = 100.50M, Descricao = "Teste de Recuperação", UrlImagem = "url_teste", Categoria = new Categoria { Id = 1, Nome = "Lanche" } };
@@ -92,6 +96,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirAtualizarProduto()
         {
             var produtoTeste = new Produto { Id = 0, Nome = "Produto Antes da Atualização", Preco = 100.50M, Descricao = "Descrição Antes", UrlImagem = "url_antes", Categoria = new Categoria { Id = 1, Nome = "Lanche" } };

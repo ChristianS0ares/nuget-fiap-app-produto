@@ -13,6 +13,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirRegistrarProduto()
         {
             var session = new RepositoryDB();
@@ -36,6 +37,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task deveRecuperarTodosOsProdutos()
         {
             var session = new RepositoryDB();
@@ -47,6 +49,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task deveRecuperarProdutoPorId()
         {
             var session = new RepositoryDB();
@@ -59,6 +62,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirAtualizarProduto()
         {
             var session = new RepositoryDB();
@@ -84,6 +88,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirExcluirProduto()
         {
             var session = new RepositoryDB();

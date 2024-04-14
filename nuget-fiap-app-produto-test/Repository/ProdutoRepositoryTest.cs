@@ -9,6 +9,7 @@ namespace nuget_fiap_app_produto_test.Repository
     public class ProdutoRepositoryTest
     {
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirConsultarTodosOsProdutos()
         {
             // Arrange
@@ -30,6 +31,8 @@ namespace nuget_fiap_app_produto_test.Repository
 
         }
 
+        [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirConsultarUmProduto()
         {
             // Arrange
@@ -46,6 +49,8 @@ namespace nuget_fiap_app_produto_test.Repository
 
         }
 
+        [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirConsultarTodosOsProdutosPelaCategoria()
         {
             // Arrange
@@ -67,6 +72,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirRegistrarUmProduto()
         {
             // Arrange
@@ -85,6 +91,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirApagarUmProduto()
         {
             // Arrange
@@ -101,6 +108,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirAtualizarUmProduto()
         {
             // Arrange

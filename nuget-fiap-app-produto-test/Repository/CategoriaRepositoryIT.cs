@@ -19,6 +19,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirRegistrarCategoria()
         {
             var session = new RepositoryDB();
@@ -33,6 +34,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task deveRecuperarTodasAsCategorias()
         {
             var session = new RepositoryDB();
@@ -44,6 +46,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task deveRecuperarCategoriaPorId()
         {
             var session = new RepositoryDB();
@@ -56,6 +59,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirAtualizarCategoria()
         {
             var session = new RepositoryDB();
@@ -72,6 +76,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirExcluirCategoria()
         {
             var session = new RepositoryDB();

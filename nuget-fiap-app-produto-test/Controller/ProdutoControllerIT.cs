@@ -18,6 +18,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirBuscarTodosOsProdutos()
         {
             var response = await _client.GetAsync("/Produto");
@@ -25,6 +26,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirCriarUmNovoProduto()
         {
             var novoProduto = new Produto
@@ -45,6 +47,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task deveRetornarNotFoundAoAtualizarUmIdInexistente()
         {
             var produtoAtualizado = new Produto
@@ -64,6 +67,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirExcluirUmProduto()
         {
             // Assumindo que o produto com ID 2 existe
@@ -73,6 +77,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task deveRetornarNotFoundAoExcluirUmProdutoInexistente()
         {
             var response = await _client.DeleteAsync("/Produto/9999");
@@ -81,6 +86,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirAtualizarProduto()
         {
             var produtoAtualizado = new Produto
@@ -100,6 +106,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task deveObterProdutoPorId()
         {
             var response = await _client.GetAsync("/Produto/1"); 

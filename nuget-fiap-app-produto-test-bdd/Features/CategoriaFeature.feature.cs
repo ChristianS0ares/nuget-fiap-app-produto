@@ -19,12 +19,14 @@ namespace nuget_fiap_app_produto_test_bdd.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [Xunit.TraitAttribute("Category", "bdd")]
     public partial class GerenciamentoDeCategoriasFeature : object, Xunit.IClassFixture<GerenciamentoDeCategoriasFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-        private string[] _featureTags = ((string[])(null));
+        private string[] _featureTags = new string[] {
+                "bdd"};
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
@@ -40,7 +42,8 @@ namespace nuget_fiap_app_produto_test_bdd.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("pt-BR"), "Features", "Gerenciamento de Categorias", "    Como um usuário da API\r\n    Eu quero gerenciar categorias", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("pt-BR"), "Features", "Gerenciamento de Categorias", "    Como um usuário da API\r\n    Eu quero gerenciar categorias", ProgrammingLanguage.CSharp, new string[] {
+                        "bdd"});
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -83,12 +86,14 @@ namespace nuget_fiap_app_produto_test_bdd.Features
         [Xunit.SkippableFactAttribute(DisplayName="Obter todas as categorias")]
         [Xunit.TraitAttribute("FeatureTitle", "Gerenciamento de Categorias")]
         [Xunit.TraitAttribute("Description", "Obter todas as categorias")]
+        [Xunit.TraitAttribute("Category", "bdd")]
         public virtual void ObterTodasAsCategorias()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "bdd"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Obter todas as categorias", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 5
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -108,13 +113,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 6
+#line 8
     testRunner.Given("que eu adicionei uma categoria com o nome \"Comida\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 7
+#line 9
     testRunner.When("eu solicito a lista de categorias", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 8
+#line 10
     testRunner.Then("eu devo receber uma lista contendo \"Comida\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
@@ -124,12 +129,14 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableFactAttribute(DisplayName="Adicionar uma nova categoria")]
         [Xunit.TraitAttribute("FeatureTitle", "Gerenciamento de Categorias")]
         [Xunit.TraitAttribute("Description", "Adicionar uma nova categoria")]
+        [Xunit.TraitAttribute("Category", "bdd")]
         public virtual void AdicionarUmaNovaCategoria()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "bdd"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adicionar uma nova categoria", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 10
+#line 13
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -149,10 +156,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 11
+#line 14
     testRunner.When("eu adiciono uma categoria com o nome \"Doces\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 12
+#line 15
     testRunner.Then("a categoria \"Doces\" deve ser adicionada com sucesso", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
@@ -162,12 +169,14 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableFactAttribute(DisplayName="Obter categoria por ID")]
         [Xunit.TraitAttribute("FeatureTitle", "Gerenciamento de Categorias")]
         [Xunit.TraitAttribute("Description", "Obter categoria por ID")]
+        [Xunit.TraitAttribute("Category", "bdd")]
         public virtual void ObterCategoriaPorID()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "bdd"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Obter categoria por ID", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 14
+#line 18
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -187,13 +196,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 15
+#line 19
     testRunner.Given("que eu adicionei uma categoria com o nome \"Molhos\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 16
+#line 20
     testRunner.When("eu solicito a categoria pelo seu ID", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 17
+#line 21
     testRunner.Then("eu devo receber a categoria \"Molhos\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
@@ -203,12 +212,14 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableFactAttribute(DisplayName="Atualizar uma categoria existente")]
         [Xunit.TraitAttribute("FeatureTitle", "Gerenciamento de Categorias")]
         [Xunit.TraitAttribute("Description", "Atualizar uma categoria existente")]
+        [Xunit.TraitAttribute("Category", "bdd")]
         public virtual void AtualizarUmaCategoriaExistente()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "bdd"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Atualizar uma categoria existente", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 19
+#line 24
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -228,16 +239,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 20
+#line 25
     testRunner.Given("que eu adicionei uma categoria com o nome \"Oriental\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 21
+#line 26
     testRunner.When("eu atualizo a categoria \"Oriental\" para ter o nome \"Comida Japonesa\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 22
+#line 27
     testRunner.When("eu solicito a categoria pelo seu ID", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 23
+#line 28
     testRunner.Then("eu devo receber a categoria com o nome \"Comida Japonesa\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
@@ -247,12 +258,14 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableFactAttribute(DisplayName="Excluir uma categoria")]
         [Xunit.TraitAttribute("FeatureTitle", "Gerenciamento de Categorias")]
         [Xunit.TraitAttribute("Description", "Excluir uma categoria")]
+        [Xunit.TraitAttribute("Category", "bdd")]
         public virtual void ExcluirUmaCategoria()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "bdd"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Excluir uma categoria", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 25
+#line 31
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -272,13 +285,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 26
+#line 32
     testRunner.Given("que eu adicionei uma categoria com o nome \"Comida\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 27
+#line 33
     testRunner.When("eu excluo a categoria \"Comida\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 28
+#line 34
     testRunner.Then("a categoria \"Comida\" não deve mais existir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }

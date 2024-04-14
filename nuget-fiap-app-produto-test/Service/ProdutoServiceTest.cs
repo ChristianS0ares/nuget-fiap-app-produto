@@ -12,6 +12,7 @@ namespace nuget_fiap_app_produto_test.Service
     {
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirConsultarTodosOsProdutos()
         {
             // Arrange
@@ -28,6 +29,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirCriarUmProduto()
         {
             // Arrange
@@ -44,6 +46,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirApagarUmProduto()
         {
             // Arrange
@@ -61,6 +64,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirListarProdutoPelaCategoria()
         {
             // Arrange
@@ -77,6 +81,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirAtualizarUmProduto()
         {
             // Arrange

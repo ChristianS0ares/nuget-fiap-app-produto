@@ -43,12 +43,61 @@ Testes são uma parte crucial do projeto, garantindo que todos os componentes fu
 - Testes de Integração: Verificam a integração entre diferentes módulos e serviços.
 - Testes BDD (Behavior-Driven Development): Utilizam cenários escritos em linguagem natural para garantir que o sistema atende aos requisitos de negócios.
 
+### Execução dos Testes
+#### Testes Unitários
+Para executar apenas os testes unitários na camada server, utilize o seguinte comando:
+```bash
+dotnet test --filter Category=Unit
+```
+Este comando seleciona e executa todos os testes marcados com a categoria Unit.
+#### Testes de Integração
+Para executar os testes de integração:
+```bash
+dotnet test --filter Category=Integration
+```
+Antes de rodar os testes de integração, assegure-se de que a base de dados PostgreSQL esteja configurada corretamente com as variáveis de ambiente DB_PASSWORD, DB_USER, e DB_HOST.
+#### Testes BDD
+Para os testes de BDD, utilize:
+```bash
+dotnet test --filter Category=bdd
+```
+Da mesma forma que os testes de integração, é necessário configurar a base de dados e as variáveis de ambiente mencionadas anteriormente para garantir que os testes de BDD funcionem corretamente.
+### Configuração de Ambiente
+É importante que a base de dados esteja acessível e configurada corretamente para os testes de integração e BDD. Configure as seguintes variáveis de ambiente antes de executar os testes:
+
+- DB_PASSWORD: Senha do usuário da base de dados.
+- DB_USER: Nome do usuário da base de dados.
+- DB_HOST: Host onde a base de dados está rodando.
+
+Essas configurações garantem que os testes possam interagir corretamente com a base de dados, permitindo uma avaliação eficaz da integração e comportamento dos componentes do sistema.
+
+
 ### Relatório de Cobertura de Testes
 
 Para visualizar o relatório de cobertura de testes, navegue até o diretório `nuget-fiap-app-produto-test/coveragereport` e abra o arquivo `index.html`. Este relatório fornece uma visão detalhada da cobertura de testes alcançada pelos testes unitários e de integração, ajudando a identificar áreas do código que podem necessitar de mais atenção em termos de testes.
 
 
 ![](nuget-fiap-app-produto-test/coverage.png)
+
+### Geração de Relatório de Cobertura de Testes
+Para gerar um relatório detalhado de cobertura de testes, que permite avaliar quais partes do código foram efetivamente testadas, siga os passos abaixo:
+#### Executar Testes com Cobertura
+Primeiro, execute os testes com a coleta de dados de cobertura ativada usando o seguinte comando:
+```bash
+dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
+```
+Este comando habilita a coleta de cobertura durante a execução dos testes e gera um arquivo de cobertura no formato cobertura, um padrão XML para relatórios de cobertura.
+#### Gerar Relatório de Cobertura
+Após a coleta dos dados de cobertura, utilize o ReportGenerator para converter o arquivo de cobertura em um relatório HTML amigável, facilitando a análise visual dos resultados. Execute o comando abaixo:
+```bash
+reportgenerator -reports:"coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:Html
+```
+Este comando gera um relatório HTML dentro do diretório coveragereport, utilizando os dados do arquivo coverage.cobertura.xml.
+#### Visualizar o Relatório
+Para visualizar o relatório de cobertura, navegue até o diretório coveragereport e abra o arquivo index.html em um navegador de sua escolha. Este arquivo apresenta uma visão detalhada da cobertura de teste, incluindo quais linhas de código foram executadas durante os testes.
+#### Considerações
+Certifique-se de ter o pacote coverlet.collector no seu projeto de teste para a coleta de cobertura funcionar corretamente.
+O ReportGenerator deve estar instalado globalmente ou disponível como uma ferramenta em seu ambiente de desenvolvimento para que o comando funcione.
 
 
 ## Consumo da API
@@ -60,12 +109,12 @@ Para facilitar o consumo e teste da API, disponibilizamos uma [coleção](api-pr
 
 #### Listar Todas as Categorias
 - Método: GET
-- URL: http://url-api/Categoria
+- URL: http://<url>/Categoria
 - Descrição: Retorna todas as categorias cadastradas no sistema.
 
 #### Criar Categoria
 - Método: POST
-- URL: http://url-api/Categoria
+- URL: http://<url>/Categoria
 - Body:
 ```bash
 {
@@ -77,12 +126,12 @@ Para facilitar o consumo e teste da API, disponibilizamos uma [coleção](api-pr
 
 #### Obter Categoria por ID
 - Método: GET
-- URL: http://url-api/Categoria/1
+- URL: http://<url>/Categoria/1
 - Descrição: Retorna os detalhes de uma categoria específica.
 
 #### Atualizar Categoria
 - Método: PUT
-- URL: http://url-api/Categoria/5
+- URL: http://<url>/Categoria/5
 - Body:
 ```bash
 {
@@ -94,18 +143,18 @@ Para facilitar o consumo e teste da API, disponibilizamos uma [coleção](api-pr
 
 #### Excluir Categoria
 - Método: DELETE
-- URL: http://url-api/Categoria/5
+- URL: http://<url>/Categoria/5
 - Descrição: Remove uma categoria do sistema.
 
 ### Produtos
 #### Listar Todos os Produtos
 - Método: GET
-- URL: http://url-api/Produto
+- URL: http://<url>/Produto
 - Descrição: Retorna todos os produtos cadastrados no sistema.
 
 #### Criar Produto
 - Método: POST
-- URL: http://url-api/Produto
+- URL: http://<url>/Produto
 - Body:
 ```bash
 {
@@ -121,12 +170,12 @@ Para facilitar o consumo e teste da API, disponibilizamos uma [coleção](api-pr
 
 #### Obter Produto por ID
 - Método: GET
-- URL: http://url-api/Produto/1
+- URL: http://<url>/Produto/1
 - Descrição: Retorna os detalhes de um produto específico.
 
 #### Atualizar Produto
 - Método: PUT
-- URL: http://url-api/Produto/1
+- URL: http://<url>/Produto/1
 - Body:
 ```bash
 {
@@ -143,10 +192,10 @@ Para facilitar o consumo e teste da API, disponibilizamos uma [coleção](api-pr
 
 #### Excluir Produto
 - Método: DELETE
-- URL: http://url-api/Produto/31
+- URL: http://<url>/Produto/31
 - Descrição: Remove um produto do sistema.
 
 #### Listar Produtos por Categoria
 - Método: GET
-- URL: http://url-api/Produto/Categoria/2
+- URL: http://<url>/Produto/Categoria/2
 - Descrição: Retorna todos os produtos de uma categoria específica.

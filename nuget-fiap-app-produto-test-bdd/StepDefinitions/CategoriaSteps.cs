@@ -4,6 +4,9 @@ using Microsoft.VisualStudio.TestPlatform.TestHost;
 using nuget_fiap_app_produto_common.Models;
 using System.Net.Http.Json;
 using TechTalk.SpecFlow;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace nuget_fiap_app_produto_test.BDD
 {
@@ -12,7 +15,7 @@ namespace nuget_fiap_app_produto_test.BDD
     {
         private readonly HttpClient _client;
         private HttpResponseMessage _response;
-        private dynamic _categoriaCriada; 
+        private Categoria _categoriaCriada;
         private readonly string _baseUrl = "/categoria";
 
         public CategoriaSteps(WebApplicationFactory<Program> factory)
@@ -27,9 +30,17 @@ namespace nuget_fiap_app_produto_test.BDD
             _response = await _client.PostAsJsonAsync(_baseUrl, novaCategoria);
             _response.EnsureSuccessStatusCode();
 
-            _categoriaCriada = await _response.Content.ReadFromJsonAsync<dynamic>();
+            var locationHeader = _response.Headers.Location.ToString();
+            if (string.IsNullOrEmpty(locationHeader))
+                throw new InvalidOperationException("Location header is missing in the POST response.");
+
+            var categoryId = locationHeader.Split('/').Last();
+            _response = await _client.GetAsync($"{_baseUrl}/{categoryId}");
+            _response.EnsureSuccessStatusCode();
+
+            _categoriaCriada = await _response.Content.ReadFromJsonAsync<Categoria>();
             _categoriaCriada.Should().NotBeNull();
-            _categoriaCriada.nome.Should().Be(nome);
+            _categoriaCriada.Nome.Should().Be(nome);
         }
 
         [When(@"eu solicito a lista de categorias")]
@@ -48,13 +59,13 @@ namespace nuget_fiap_app_produto_test.BDD
         [When(@"eu solicito a categoria pelo seu ID")]
         public async Task QuandoEuSolicitoACategoriaPeloSeuID()
         {
-            _response = await _client.GetAsync($"{_baseUrl}/{_categoriaCriada.id}");
+            _response = await _client.GetAsync($"{_baseUrl}/{_categoriaCriada.Id}");
         }
 
         [When(@"eu excluo a categoria ""(.*)""")]
         public async Task QuandoEuExcluoACategoria(string nome)
         {
-            _response = await _client.DeleteAsync($"{_baseUrl}/{_categoriaCriada.id}");
+            _response = await _client.DeleteAsync($"{_baseUrl}/{_categoriaCriada.Id}");
         }
 
         [Then(@"eu devo receber uma lista contendo ""(.*)""")]
@@ -69,15 +80,14 @@ namespace nuget_fiap_app_produto_test.BDD
         public void EntaoACategoriaDeveSerAdicionadaComSucesso(string nome)
         {
             _response.StatusCode.Should().Be(System.Net.HttpStatusCode.Created);
-            _categoriaCriada.nome.Should().Be(nome);
         }
 
         [Then(@"eu devo receber a categoria ""(.*)""")]
         public async Task EntaoEuDevoReceberACategoria(string nome)
         {
             _response.EnsureSuccessStatusCode();
-            var categoria = await _response.Content.ReadFromJsonAsync<dynamic>();
-            categoria.nome.Should().Be(nome);
+            var categoria = await _response.Content.ReadFromJsonAsync<Categoria>();
+            categoria.Nome.Should().Be(nome);
         }
 
         [Then(@"a categoria ""(.*)"" não deve mais existir")]
@@ -86,18 +96,25 @@ namespace nuget_fiap_app_produto_test.BDD
             _response.StatusCode.Should().Be(System.Net.HttpStatusCode.NoContent);
         }
 
-        [Then(@"eu atualizo a categoria ""(.*)"" para ter o nome ""(.*)""")]
-        public async Task EeuAtualizoACategoriaParaTerONome(string nomeOriginal, string novoNome)
+        [When(@"eu atualizo a categoria ""(.*)"" para ter o nome ""(.*)""")]
+        public async Task QuandoEuAtualizoACategoriaParaTerONome(string nomeOriginal, string novoNome)
         {
             var categoriaAtualizada = new { Nome = novoNome };
-            _response = await _client.PutAsJsonAsync($"{_baseUrl}/{_categoriaCriada.id}", categoriaAtualizada);
+            _response = await _client.PutAsJsonAsync($"{_baseUrl}/{_categoriaCriada.Id}", categoriaAtualizada);
             _response.EnsureSuccessStatusCode();
 
-            // Verificando se a atualização foi bem-sucedida
-            var responseAtualizacao = await _client.GetAsync($"{_baseUrl}/{_categoriaCriada.id}");
+            var responseAtualizacao = await _client.GetAsync($"{_baseUrl}/{_categoriaCriada.Id}");
             responseAtualizacao.EnsureSuccessStatusCode();
-            var categoriaAtualizadaVerificada = await responseAtualizacao.Content.ReadFromJsonAsync<dynamic>();
-            categoriaAtualizadaVerificada.nome.Should().Be(novoNome);
+            var categoriaAtualizadaVerificada = await responseAtualizacao.Content.ReadFromJsonAsync<Categoria>();
+            categoriaAtualizadaVerificada.Nome.Should().Be(novoNome);
+        }
+
+        [Then(@"eu devo receber a categoria com o nome ""(.*)""")]
+        public async Task EntaoEuDevoReceberACategoriaComONome(string nome)
+        {
+            _response.EnsureSuccessStatusCode();
+            var categoria = await _response.Content.ReadFromJsonAsync<Categoria>();
+            categoria.Nome.Should().Be(nome);
         }
     }
 }

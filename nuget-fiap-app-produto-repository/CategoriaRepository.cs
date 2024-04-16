@@ -34,45 +34,24 @@ namespace nuget_fiap_app_produto_repository
         {
             string sql = "INSERT INTO public.tbl_categoria (nome) VALUES (@nome) RETURNING id";
 
-            try
-            {
-                int categoriaId = await _session.Connection.ExecuteScalarAsync<int>(sql, categoria);
-                return categoriaId;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            int categoriaId = await _session.Connection.ExecuteScalarAsync<int>(sql, categoria);
+            return categoriaId;
         }
 
         public async Task<bool> Update(Categoria categoria)
         {
             string sql = "UPDATE public.tbl_categoria SET nome = @nome WHERE id = @id";
 
-            try
-            {
-                int rowsAffected = await _session.Connection.ExecuteAsync(sql, categoria);
-                return rowsAffected > 0;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            int rowsAffected = await _session.Connection.ExecuteAsync(sql, categoria);
+            return rowsAffected > 0;
         }
 
         public async Task<bool> Delete(int id)
         {
             string sql = "DELETE FROM public.tbl_categoria WHERE id = @id";
 
-            try
-            {
-                int rowsAffected = await _session.Connection.ExecuteAsync(sql, new { id });
-                return rowsAffected > 0;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            int rowsAffected = await _session.Connection.ExecuteAsync(sql, new { id });
+            return rowsAffected > 0;
         }
     }
 }

@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuget-fiap-app-produto-server", "nuget-fiap-app-produto-server.csproj", "{68CEA9B5-2392-4026-8F78-551F25616CA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nuget-fiap-app-produto-server", "nuget-fiap-app-produto-server.csproj", "{68CEA9B5-2392-4026-8F78-551F25616CA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuget-fiap-app-produto-common", "..\nuget-fiap-app-produto-common\nuget-fiap-app-produto-common.csproj", "{794626FF-DF5F-485D-9E0D-658C10DC3063}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nuget-fiap-app-produto-common", "..\nuget-fiap-app-produto-common\nuget-fiap-app-produto-common.csproj", "{794626FF-DF5F-485D-9E0D-658C10DC3063}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuget-fiap-app-produto-repository", "..\nuget-fiap-app-produto-repository\nuget-fiap-app-produto-repository.csproj", "{60034E8E-220F-4C2D-9225-31B40B41E09E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nuget-fiap-app-produto-repository", "..\nuget-fiap-app-produto-repository\nuget-fiap-app-produto-repository.csproj", "{60034E8E-220F-4C2D-9225-31B40B41E09E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuget-fiap-app-produto", "..\nuget-fiap-app-produto\nuget-fiap-app-produto.csproj", "{8EE69EA3-6186-4317-98F3-53DEDCDA1938}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nuget-fiap-app-produto", "..\nuget-fiap-app-produto\nuget-fiap-app-produto.csproj", "{8EE69EA3-6186-4317-98F3-53DEDCDA1938}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuget-fiap-app-produto-test", "..\nuget-fiap-app-produto-test\nuget-fiap-app-produto-test.csproj", "{35F0DFB9-202C-46E1-9007-EF8E298E02DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nuget-fiap-app-produto-test", "..\nuget-fiap-app-produto-test\nuget-fiap-app-produto-test.csproj", "{35F0DFB9-202C-46E1-9007-EF8E298E02DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuget-fiap-app-produto-test-bdd", "..\nuget-fiap-app-produto-test-bdd\nuget-fiap-app-produto-test-bdd.csproj", "{1AFCFA88-EF33-4DEB-842E-D5AEF5CF6E11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{35F0DFB9-202C-46E1-9007-EF8E298E02DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35F0DFB9-202C-46E1-9007-EF8E298E02DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35F0DFB9-202C-46E1-9007-EF8E298E02DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AFCFA88-EF33-4DEB-842E-D5AEF5CF6E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AFCFA88-EF33-4DEB-842E-D5AEF5CF6E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AFCFA88-EF33-4DEB-842E-D5AEF5CF6E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AFCFA88-EF33-4DEB-842E-D5AEF5CF6E11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

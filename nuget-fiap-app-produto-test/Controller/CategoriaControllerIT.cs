@@ -19,6 +19,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirBuscarTodos()
         {
             var response = await _client.GetAsync("/Categoria");
@@ -26,6 +27,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task deveRetornarNaoEncontradoQuandoIdInexistente()
         {
             var response = await _client.GetAsync("/Categoria/999");
@@ -34,6 +36,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirCriarUmaNovaCategoria()
         {
             var novaCategoria = new Categoria { Nome = "Nova Categoria" };
@@ -47,6 +50,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task deveRetornarNotFoundAoAtualizarUmIdInexistente()
         {
             var categoriaAtualizada = new Categoria { Nome = "Categoria Atualizada" };
@@ -58,12 +62,23 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirExcluirUmaCategoria()
         {
             // Assumindo que a categoria com ID 1 existe
             var response = await _client.DeleteAsync("/Categoria/5");
 
             response.StatusCode.Should().Be(HttpStatusCode.NoContent);
+        }
+
+        [Fact]
+        [Trait("Category", "Integration")]
+        public async Task naoDevePermitirExcluirUmaCategoriaInexistente()
+        {
+            // Assumindo que a categoria com ID -1 não existe
+            var response = await _client.DeleteAsync("/Categoria/-1");
+
+            response.StatusCode.Should().Be(HttpStatusCode.NotFound);
         }
     }
 }

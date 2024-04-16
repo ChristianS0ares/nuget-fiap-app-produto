@@ -32,19 +32,7 @@ namespace nuget_fiap_app_produto.Controllers
             try
             {
                 var produtos = await _produtoService.GetAll();
-
-                if (produtos != null && produtos.Any())
-                {
-                    return Ok(produtos); // Retorna 200 OK com os produtos recuperados.
-                }
-                else if (produtos != null)
-                {
-                    return NotFound(); // Retorna 404 Not Found se não houver produtos encontrados.
-                }
-                else
-                {
-                    return StatusCode(500, "Erro interno do servidor"); // Retorna 500 Internal Server Error em caso de erro interno do servidor.
-                }
+                return Ok(produtos); // Retorna 200 OK com os produtos recuperados.
             }
             catch (Exception ex)
             {
@@ -68,19 +56,7 @@ namespace nuget_fiap_app_produto.Controllers
             try
             {
                 var produtos = await _produtoService.GetByIdCategoria(idCategoria);
-
-                if (produtos != null && produtos.Any())
-                {
-                    return Ok(produtos); // Retorna 200 OK com os produtos recuperados.
-                }
-                else if (produtos != null)
-                {
-                    return NotFound(); // Retorna 404 Not Found se não houver produtos encontrados.
-                }
-                else
-                {
-                    return StatusCode(500, "Erro interno do servidor"); // Retorna 500 Internal Server Error em caso de erro interno do servidor.
-                }
+                return Ok(produtos); // Retorna 200 OK com os produtos recuperados.
             }
             catch (Exception ex)
             {
@@ -134,14 +110,11 @@ namespace nuget_fiap_app_produto.Controllers
             {
                 bool result = await _produtoService.Delete(id);
 
-                if (result)
-                {
-                    return NoContent(); // Retorna 204 No Content se o produto for excluído com sucesso.
-                }
-                else
+                if (!result)
                 {
                     return NotFound(); // Retorna 404 Not Found se o produto não for encontrado.
                 }
+                return NoContent(); // Retorna 204 No Content se o produto for excluído com sucesso.
             }
             catch (Exception ex)
             {
@@ -169,14 +142,11 @@ namespace nuget_fiap_app_produto.Controllers
             {
                 var produto = await _produtoService.GetById(id);
 
-                if (produto != null)
-                {
-                    return Ok(produto); // Retorna 200 OK com o produto recuperado.
-                }
-                else
+                if (produto == null)
                 {
                     return NotFound(); // Retorna 404 Not Found se o produto não for encontrado.
                 }
+                return Ok(produto); // Retorna 200 OK com o produto recuperado.
             }
             catch (Exception ex)
             {
@@ -207,14 +177,11 @@ namespace nuget_fiap_app_produto.Controllers
                 
                 bool updated = await _produtoService.Update(produto, id);
 
-                if (updated)
-                {
-                    return Ok(); // Retorna 200 OK se a atualização for bem-sucedida.
-                }
-                else
+                if (!updated)
                 {
                     return NotFound(); // Retorna 404 Not Found se o produto não for encontrado.
                 }
+                return Ok(); // Retorna 200 OK se a atualização for bem-sucedida.
             }
             catch (Exception ex)
             {

@@ -25,6 +25,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirCriarCategoria()
         {
             var novaCategoria = new Categoria { Nome = "Categoria Teste" };
@@ -39,6 +40,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirExcluirCategoria()
         {
             var categoriaTeste = new Categoria { Nome = "Categoria Para Excluir" };
@@ -56,6 +58,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task deveRecuperarTodasCategorias()
         {
             await _categoriaService.Create(new Categoria { Nome = "Categoria Teste 1" });
@@ -69,6 +72,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task deveRecuperarCategoriaPorId()
         {
             var categoriaTeste = new Categoria { Nome = "Categoria Para Recuperar" };
@@ -81,6 +85,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Integration")]
         public async Task devePermitirAtualizarCategoria()
         {
             var categoriaTeste = new Categoria { Nome = "Categoria Antes da Atualização" };

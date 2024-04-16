@@ -3,7 +3,7 @@ services:
   postgres:
     container_name: database-produto 
     build:
-      context: ../nuget-fiap-app-database
+      context: ./nuget-fiap-app-database
     environment:
       POSTGRES_DB: postgres
       POSTGRES_USER: postgres

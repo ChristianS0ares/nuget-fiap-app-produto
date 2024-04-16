@@ -11,6 +11,7 @@ namespace nuget_fiap_app_produto_test.Service
     {
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirConsultarTodasAsCategorias()
         {
             // Arrange
@@ -30,6 +31,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirConsultarUmaCategoria()
         {
             // Arrange
@@ -49,6 +51,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirCriarUmaCategoria()
         {
             // Arrange
@@ -68,6 +71,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirAtualizarUmaCategoria()
         {
             // Arrange
@@ -87,6 +91,7 @@ namespace nuget_fiap_app_produto_test.Service
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task deveRetornarExcecaoAoApagarUmaCategoriaVinculadaAUmProduto()
         {
             // Arrange
@@ -106,6 +111,7 @@ namespace nuget_fiap_app_produto_test.Service
 
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirApagarUmaCategoria()
         {
             // Arrange

@@ -9,6 +9,7 @@ namespace nuget_fiap_app_produto_test.Repository
     public class CategoriaRepositoryTest
     {
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirConsultarTodasAsCategorias()
         {
             //Arrange 
@@ -30,6 +31,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirRegistrarCategoria()
         {
             //Arrange 
@@ -47,6 +49,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirConsultarUmaCategoria()
         {
             //Arrange 
@@ -64,6 +67,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirApagarUmaCategoria()
         {
             //Arrange 
@@ -80,6 +84,7 @@ namespace nuget_fiap_app_produto_test.Repository
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task devePermitirAtualizarUmaCategoria()
         {
             //Arrange 

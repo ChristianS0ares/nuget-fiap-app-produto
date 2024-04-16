@@ -25,23 +25,11 @@ namespace nuget_fiap_app_produto.Services
         {
             try
             {
-                _unitOfWork.BeginTransaction();
                 int categoriaId = await _categoriaRespository.Create(categoria);
-
-                if (categoriaId > 0)
-                {
-                    _unitOfWork.Commit();
-                    return categoriaId;
-                }
-                else
-                {
-                    _unitOfWork.Rollback();
-                    return 0;
-                }
+                return categoriaId;
             }
             catch (Exception ex)
             {
-                _unitOfWork.Rollback();
                 throw new Exception(ex.Message);
             }
         }
@@ -55,23 +43,11 @@ namespace nuget_fiap_app_produto.Services
 
             try
             {
-                _unitOfWork.BeginTransaction();
                 var result = await _categoriaRespository.Delete(id);
-
-                if (result)
-                {
-                    _unitOfWork.Commit();
-                    return true;
-                }
-                else
-                {
-                    _unitOfWork.Rollback();
-                    return false;
-                }
+                return result;
             }
             catch (Exception ex)
             {
-                _unitOfWork.Rollback();
                 throw new Exception(ex.Message);
             }
         }
@@ -116,23 +92,11 @@ namespace nuget_fiap_app_produto.Services
                 // Atualize as propriedades da categoria existente com base nos dados de 'categoria'.
                 existingCategoria.Nome = categoria.Nome;
 
-                _unitOfWork.BeginTransaction();
                 bool updated = await _categoriaRespository.Update(existingCategoria);
-
-                if (updated)
-                {
-                    _unitOfWork.Commit();
-                    return true;
-                }
-                else
-                {
-                    _unitOfWork.Rollback();
-                    return false;
-                }
+                return updated;
             }
             catch (Exception ex)
             {
-                _unitOfWork.Rollback();
                 throw new Exception(ex.Message);
             }
         }

@@ -5,7 +5,7 @@ using Xunit;
 using FluentAssertions;
 using nuget_fiap_app_produto_common.Interfaces.Services;
 using nuget_fiap_app_produto_common.Models;
-using API.Controllers; // Substitua pela namespace correta do seu CategoriaController
+using nuget_fiap_app_produto.Controllers;
 
 namespace nuget_fiap_app_produto_test.Controller
 {
@@ -21,6 +21,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task GetAll_DeveRetornar200OK_QuandoCategoriasExistirem()
         {
             // Arrange
@@ -43,6 +44,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task GetById_DeveRetornar200OK_QuandoCategoriaExistir()
         {
             // Arrange
@@ -58,6 +60,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task Post_DeveRetornar201Created_QuandoCategoriaForCriada()
         {
             // Arrange
@@ -74,6 +77,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task Put_ShouldReturn200OK_WhenCategoriaIsUpdated()
         {
             // Arrange
@@ -88,6 +92,7 @@ namespace nuget_fiap_app_produto_test.Controller
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public async Task Delete_DeveRetornar204NoContent_QuandoCategoriaForDeletada()
         {
             // Arrange

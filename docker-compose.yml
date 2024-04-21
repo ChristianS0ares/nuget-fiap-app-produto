@@ -10,6 +10,8 @@ services:
       POSTGRES_PASSWORD: 123456789
     ports:
       - "5432:5432"  # Mapeamento de porta
+    networks:
+      - nugetlanches-network  
 
   api:
     container_name: app-produto
@@ -23,3 +25,9 @@ services:
       - "8080:80"  
     depends_on:
       - postgres  
+    networks:
+      - nugetlanches-network
+
+networks: 
+  nugetlanches-network:
+    driver: bridge

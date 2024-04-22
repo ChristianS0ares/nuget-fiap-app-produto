@@ -45,7 +45,6 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"ChristianS0ares_nuget-fiap-app-produto" /o:"christians0ares" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          /d:sonar.cs.vscoveragexml.reportsPaths=.\nuget-fiap-app-produto-test\coverage.cobertura.xml
           dotnet build .\nuget-fiap-app-produto-server\nuget-fiap-app-produto-server.sln -c Release
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
       - name: SonarQube Quality Gate check

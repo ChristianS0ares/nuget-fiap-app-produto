@@ -46,5 +46,5 @@ jobs:
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"ChristianS0ares_nuget-fiap-app-produto" /o:"christians0ares" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
           dotnet build .\nuget-fiap-app-produto-server\nuget-fiap-app-produto-server.sln -c Release
-          dotnet test ./nuget-fiap-app-produto-server/nuget-fiap-app-produto-server.sln --collect:"XPlat Code Coverage" --settings ./nuget-fiap-app-produto-server/UnitTests.runsettings
+          dotnet test ./nuget-fiap-app-produto-test/nuget-fiap-app-produto-test.sln --collect:"XPlat Code Coverage" --settings ./nuget-fiap-app-produto-test/UnitTests.runsettings
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"

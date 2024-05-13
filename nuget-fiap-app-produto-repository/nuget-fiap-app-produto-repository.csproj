@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>nuget_fiap_app_produto_repository</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+    <ItemGroup>
+	    <PackageReference Include="Dapper" Version="2.1.4" />
+	    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+	    <PackageReference Include="Npgsql" Version="7.0.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\nuget-fiap-app-produto-common\nuget-fiap-app-produto-common.csproj" />
+    </ItemGroup>
+
+</Project>

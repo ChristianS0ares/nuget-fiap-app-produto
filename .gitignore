@@ -1,0 +1,13 @@
+nuget-fiap-app-produto-test-bdd/bin/
+nuget-fiap-app-produto-test-bdd/obj/
+nuget-fiap-app-produto-test/bin/
+nuget-fiap-app-produto-test/obj/
+nuget-fiap-app-produto-repository/obj/
+nuget-fiap-app-produto-repository/bin/
+nuget-fiap-app-produto-server/obj/
+nuget-fiap-app-produto-server/bin/
+nuget-fiap-app-produto-server/.vs/
+nuget-fiap-app-produto-common/obj/
+nuget-fiap-app-produto-common/bin/
+nuget-fiap-app-produto/obj/
+nuget-fiap-app-produto/bin/

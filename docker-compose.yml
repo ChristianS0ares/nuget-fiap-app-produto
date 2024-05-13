@@ -1,0 +1,33 @@
+version: '3'
+services:
+  postgres:
+    container_name: database-produto 
+    build:
+      context: ./nuget-fiap-app-database
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456789
+    ports:
+      - "5432:5432"  # Mapeamento de porta
+    networks:
+      - nugetlanches-network  
+
+  api:
+    container_name: app-produto
+    build:
+      context: .  # Caminho para o Dockerfile da aplicação
+    environment:
+      DB_PASSWORD: 123456789
+      DB_USER: postgres
+      DB_HOST: postgres:5432  
+    ports:
+      - "8080:80"  
+    depends_on:
+      - postgres  
+    networks:
+      - nugetlanches-network
+
+networks: 
+  nugetlanches-network:
+    driver: bridge

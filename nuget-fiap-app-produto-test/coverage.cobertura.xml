@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.8504" branch-rate="0.8421" version="1.9" timestamp="1713130822" lines-covered="364" lines-valid="428" branches-covered="32" branches-valid="38">
+  <sources>
+    <source>C:\Fase4\nuget-fiap-app-produto\</source>
+  </sources>
+  <packages>
+    <package name="nuget-fiap-app-produto-common" line-rate="1" branch-rate="1" complexity="8">
+      <classes>
+        <class name="nuget_fiap_app_produto_common.Models.Categoria" filename="nuget-fiap-app-produto-common\Models\Categoria.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="371" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Nome" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="372" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="371" branch="False" />
+            <line number="7" hits="372" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_common.Models.Produto" filename="nuget-fiap-app-produto-common\Models\Produto.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="250" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Nome" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="297" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Preco" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="254" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Descricao" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="254" branch="False" />
+              </lines>
+            </method>
+            <method name="get_UrlImagem" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="254" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Categoria" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="264" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="250" branch="False" />
+            <line number="7" hits="297" branch="False" />
+            <line number="8" hits="254" branch="False" />
+            <line number="9" hits="254" branch="False" />
+            <line number="10" hits="254" branch="False" />
+            <line number="11" hits="264" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="nuget-fiap-app-produto-repository" line-rate="0.9731000000000001" branch-rate="0.6875" complexity="41">
+      <classes>
+        <class name="nuget_fiap_app_produto_repository.CategoriaRepository" filename="nuget-fiap-app-produto-repository\CategoriaRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(nuget_fiap_app_produto_repository.DB.RepositoryDB)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="16" branch="False" />
+                <line number="13" hits="16" branch="False" />
+                <line number="14" hits="16" branch="False" />
+                <line number="15" hits="16" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="16" branch="False" />
+            <line number="13" hits="16" branch="False" />
+            <line number="14" hits="16" branch="False" />
+            <line number="15" hits="16" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.CategoriaRepository/&lt;Create&gt;d__4" filename="nuget-fiap-app-produto-repository\CategoriaRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="9" branch="False" />
+                <line number="35" hits="9" branch="False" />
+                <line number="37" hits="9" branch="False" />
+                <line number="38" hits="9" branch="False" />
+                <line number="39" hits="9" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="34" hits="9" branch="False" />
+            <line number="35" hits="9" branch="False" />
+            <line number="37" hits="9" branch="False" />
+            <line number="38" hits="9" branch="False" />
+            <line number="39" hits="9" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.CategoriaRepository/&lt;Delete&gt;d__6" filename="nuget-fiap-app-produto-repository\CategoriaRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="50" hits="4" branch="False" />
+                <line number="51" hits="4" branch="False" />
+                <line number="53" hits="4" branch="False" />
+                <line number="54" hits="4" branch="False" />
+                <line number="55" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="50" hits="4" branch="False" />
+            <line number="51" hits="4" branch="False" />
+            <line number="53" hits="4" branch="False" />
+            <line number="54" hits="4" branch="False" />
+            <line number="55" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.CategoriaRepository/&lt;GetAll&gt;d__2" filename="nuget-fiap-app-produto-repository\CategoriaRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="3" branch="False" />
+                <line number="19" hits="3" branch="False" />
+                <line number="21" hits="3" branch="False" />
+                <line number="22" hits="3" branch="False" />
+                <line number="23" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="3" branch="False" />
+            <line number="19" hits="3" branch="False" />
+            <line number="21" hits="3" branch="False" />
+            <line number="22" hits="3" branch="False" />
+            <line number="23" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.CategoriaRepository/&lt;GetById&gt;d__3" filename="nuget-fiap-app-produto-repository\CategoriaRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="11" branch="False" />
+                <line number="27" hits="11" branch="False" />
+                <line number="29" hits="11" branch="False" />
+                <line number="30" hits="11" branch="False" />
+                <line number="31" hits="11" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="11" branch="False" />
+            <line number="27" hits="11" branch="False" />
+            <line number="29" hits="11" branch="False" />
+            <line number="30" hits="11" branch="False" />
+            <line number="31" hits="11" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.CategoriaRepository/&lt;Update&gt;d__5" filename="nuget-fiap-app-produto-repository\CategoriaRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="42" hits="2" branch="False" />
+                <line number="43" hits="2" branch="False" />
+                <line number="45" hits="2" branch="False" />
+                <line number="46" hits="2" branch="False" />
+                <line number="47" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="42" hits="2" branch="False" />
+            <line number="43" hits="2" branch="False" />
+            <line number="45" hits="2" branch="False" />
+            <line number="46" hits="2" branch="False" />
+            <line number="47" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.ProdutoRepository" filename="nuget-fiap-app-produto-repository\ProdutoRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(nuget_fiap_app_produto_repository.DB.RepositoryDB)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="28" branch="False" />
+                <line number="27" hits="28" branch="False" />
+                <line number="28" hits="28" branch="False" />
+                <line number="29" hits="28" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="28" branch="False" />
+            <line number="27" hits="28" branch="False" />
+            <line number="28" hits="28" branch="False" />
+            <line number="29" hits="28" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.ProdutoRepository/&lt;&gt;c" filename="nuget-fiap-app-produto-repository\ProdutoRepository.cs" line-rate="0.6666" branch-rate="1" complexity="3">
+          <methods>
+            <method name="&lt;GetAll&gt;b__3_0" signature="(nuget_fiap_app_produto_common.Models.Produto,nuget_fiap_app_produto_common.Models.Categoria)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="36" hits="107" branch="False" />
+                <line number="37" hits="107" branch="False" />
+                <line number="38" hits="107" branch="False" />
+                <line number="39" hits="107" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;GetByIdCategoria&gt;b__4_0" signature="(nuget_fiap_app_produto_common.Models.Produto,nuget_fiap_app_produto_common.Models.Categoria)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;GetById&gt;b__7_0" signature="(nuget_fiap_app_produto_common.Models.Produto,nuget_fiap_app_produto_common.Models.Categoria)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="93" hits="9" branch="False" />
+                <line number="94" hits="9" branch="False" />
+                <line number="95" hits="9" branch="False" />
+                <line number="96" hits="9" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="36" hits="107" branch="False" />
+            <line number="37" hits="107" branch="False" />
+            <line number="38" hits="107" branch="False" />
+            <line number="39" hits="107" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="93" hits="9" branch="False" />
+            <line number="94" hits="9" branch="False" />
+            <line number="95" hits="9" branch="False" />
+            <line number="96" hits="9" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.ProdutoRepository/&lt;Create&gt;d__5" filename="nuget-fiap-app-produto-repository\ProdutoRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="61" hits="9" branch="False" />
+                <line number="62" hits="9" branch="False" />
+                <line number="64" hits="9" branch="False" />
+                <line number="65" hits="9" branch="False" />
+                <line number="66" hits="9" branch="False" />
+                <line number="67" hits="9" branch="False" />
+                <line number="68" hits="9" branch="False" />
+                <line number="69" hits="9" branch="False" />
+                <line number="70" hits="9" branch="False" />
+                <line number="71" hits="9" branch="False" />
+                <line number="72" hits="9" branch="False" />
+                <line number="74" hits="9" branch="False" />
+                <line number="75" hits="9" branch="False" />
+                <line number="76" hits="9" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="61" hits="9" branch="False" />
+            <line number="62" hits="9" branch="False" />
+            <line number="64" hits="9" branch="False" />
+            <line number="65" hits="9" branch="False" />
+            <line number="66" hits="9" branch="False" />
+            <line number="67" hits="9" branch="False" />
+            <line number="68" hits="9" branch="False" />
+            <line number="69" hits="9" branch="False" />
+            <line number="70" hits="9" branch="False" />
+            <line number="71" hits="9" branch="False" />
+            <line number="72" hits="9" branch="False" />
+            <line number="74" hits="9" branch="False" />
+            <line number="75" hits="9" branch="False" />
+            <line number="76" hits="9" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.ProdutoRepository/&lt;Delete&gt;d__6" filename="nuget-fiap-app-produto-repository\ProdutoRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="79" hits="4" branch="False" />
+                <line number="80" hits="4" branch="False" />
+                <line number="82" hits="4" branch="False" />
+                <line number="83" hits="4" branch="False" />
+                <line number="84" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="79" hits="4" branch="False" />
+            <line number="80" hits="4" branch="False" />
+            <line number="82" hits="4" branch="False" />
+            <line number="83" hits="4" branch="False" />
+            <line number="84" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.ProdutoRepository/&lt;GetAll&gt;d__3" filename="nuget-fiap-app-produto-repository\ProdutoRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="31" hits="3" branch="False" />
+                <line number="33" hits="3" branch="False" />
+                <line number="34" hits="3" branch="False" />
+                <line number="35" hits="3" branch="False" />
+                <line number="40" hits="3" branch="False" />
+                <line number="41" hits="3" branch="False" />
+                <line number="42" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="31" hits="3" branch="False" />
+            <line number="33" hits="3" branch="False" />
+            <line number="34" hits="3" branch="False" />
+            <line number="35" hits="3" branch="False" />
+            <line number="40" hits="3" branch="False" />
+            <line number="41" hits="3" branch="False" />
+            <line number="42" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.ProdutoRepository/&lt;GetById&gt;d__7" filename="nuget-fiap-app-produto-repository\ProdutoRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="87" hits="12" branch="False" />
+                <line number="88" hits="12" branch="False" />
+                <line number="90" hits="12" branch="False" />
+                <line number="91" hits="12" branch="False" />
+                <line number="92" hits="12" branch="False" />
+                <line number="97" hits="12" branch="False" />
+                <line number="98" hits="12" branch="False" />
+                <line number="99" hits="12" branch="False" />
+                <line number="101" hits="12" branch="False" />
+                <line number="102" hits="12" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="87" hits="12" branch="False" />
+            <line number="88" hits="12" branch="False" />
+            <line number="90" hits="12" branch="False" />
+            <line number="91" hits="12" branch="False" />
+            <line number="92" hits="12" branch="False" />
+            <line number="97" hits="12" branch="False" />
+            <line number="98" hits="12" branch="False" />
+            <line number="99" hits="12" branch="False" />
+            <line number="101" hits="12" branch="False" />
+            <line number="102" hits="12" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.ProdutoRepository/&lt;GetByIdCategoria&gt;d__4" filename="nuget-fiap-app-produto-repository\ProdutoRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="45" hits="3" branch="False" />
+                <line number="46" hits="3" branch="False" />
+                <line number="48" hits="3" branch="False" />
+                <line number="49" hits="3" branch="False" />
+                <line number="50" hits="3" branch="False" />
+                <line number="55" hits="3" branch="False" />
+                <line number="56" hits="3" branch="False" />
+                <line number="57" hits="3" branch="False" />
+                <line number="58" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="45" hits="3" branch="False" />
+            <line number="46" hits="3" branch="False" />
+            <line number="48" hits="3" branch="False" />
+            <line number="49" hits="3" branch="False" />
+            <line number="50" hits="3" branch="False" />
+            <line number="55" hits="3" branch="False" />
+            <line number="56" hits="3" branch="False" />
+            <line number="57" hits="3" branch="False" />
+            <line number="58" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.ProdutoRepository/&lt;Update&gt;d__8" filename="nuget-fiap-app-produto-repository\ProdutoRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="105" hits="3" branch="False" />
+                <line number="106" hits="3" branch="False" />
+                <line number="107" hits="3" branch="False" />
+                <line number="108" hits="3" branch="False" />
+                <line number="109" hits="3" branch="False" />
+                <line number="110" hits="3" branch="False" />
+                <line number="111" hits="3" branch="False" />
+                <line number="112" hits="3" branch="False" />
+                <line number="113" hits="3" branch="False" />
+                <line number="115" hits="3" branch="False" />
+                <line number="116" hits="3" branch="False" />
+                <line number="117" hits="3" branch="False" />
+                <line number="118" hits="3" branch="False" />
+                <line number="119" hits="3" branch="False" />
+                <line number="120" hits="3" branch="False" />
+                <line number="121" hits="3" branch="False" />
+                <line number="122" hits="3" branch="False" />
+                <line number="123" hits="3" branch="False" />
+                <line number="125" hits="3" branch="False" />
+                <line number="126" hits="3" branch="False" />
+                <line number="127" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="105" hits="3" branch="False" />
+            <line number="106" hits="3" branch="False" />
+            <line number="107" hits="3" branch="False" />
+            <line number="108" hits="3" branch="False" />
+            <line number="109" hits="3" branch="False" />
+            <line number="110" hits="3" branch="False" />
+            <line number="111" hits="3" branch="False" />
+            <line number="112" hits="3" branch="False" />
+            <line number="113" hits="3" branch="False" />
+            <line number="115" hits="3" branch="False" />
+            <line number="116" hits="3" branch="False" />
+            <line number="117" hits="3" branch="False" />
+            <line number="118" hits="3" branch="False" />
+            <line number="119" hits="3" branch="False" />
+            <line number="120" hits="3" branch="False" />
+            <line number="121" hits="3" branch="False" />
+            <line number="122" hits="3" branch="False" />
+            <line number="123" hits="3" branch="False" />
+            <line number="125" hits="3" branch="False" />
+            <line number="126" hits="3" branch="False" />
+            <line number="127" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.DB.RepositoryDB" filename="nuget-fiap-app-produto-repository\DB\RepositoryDB.cs" line-rate="1" branch-rate="0.7142000000000001" complexity="18">
+          <methods>
+            <method name="get_Connection" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="76" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Transaction" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="13" branch="False" />
+              </lines>
+            </method>
+            <method name="Dispose" signature="()" line-rate="1" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="19" hits="13" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="7" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+              </lines>
+            </method>
+            <method name="GetExclusiveConnection" signature="()" line-rate="1" branch-rate="0.5" complexity="6">
+              <lines>
+                <line number="26" hits="33" branch="False" />
+                <line number="27" hits="33" branch="False" />
+                <line number="29" hits="33" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="18" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="30" hits="33" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="38" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="31" hits="33" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="58" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="33" hits="33" branch="False" />
+                <line number="34" hits="33" branch="False" />
+              </lines>
+            </method>
+            <method name="GetConnection" signature="(nuget_fiap_app_produto_repository.DB.DTO.Conexao)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="42" hits="33" branch="False" />
+                <line number="43" hits="33" branch="False" />
+                <line number="44" hits="33" branch="False" />
+                <line number="45" hits="33" branch="False" />
+                <line number="46" hits="33" branch="False" />
+              </lines>
+            </method>
+            <method name="CreateEnvironmentVariables" signature="()" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="49" hits="33" branch="False" />
+                <line number="50" hits="33" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="18" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="51" hits="2" branch="False" />
+                <line number="53" hits="33" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="53" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="54" hits="2" branch="False" />
+                <line number="56" hits="33" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="88" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="57" hits="2" branch="False" />
+                <line number="58" hits="33" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="33" branch="False" />
+                <line number="14" hits="33" branch="False" />
+                <line number="15" hits="33" branch="False" />
+                <line number="16" hits="33" branch="False" />
+                <line number="17" hits="33" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="76" branch="False" />
+            <line number="11" hits="13" branch="False" />
+            <line number="19" hits="13" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="7" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="26" hits="33" branch="False" />
+            <line number="27" hits="33" branch="False" />
+            <line number="29" hits="33" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="18" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="30" hits="33" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="38" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="31" hits="33" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="58" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="33" hits="33" branch="False" />
+            <line number="34" hits="33" branch="False" />
+            <line number="42" hits="33" branch="False" />
+            <line number="43" hits="33" branch="False" />
+            <line number="44" hits="33" branch="False" />
+            <line number="45" hits="33" branch="False" />
+            <line number="46" hits="33" branch="False" />
+            <line number="49" hits="33" branch="False" />
+            <line number="50" hits="33" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="18" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="51" hits="2" branch="False" />
+            <line number="53" hits="33" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="53" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="54" hits="2" branch="False" />
+            <line number="56" hits="33" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="88" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="57" hits="2" branch="False" />
+            <line number="58" hits="33" branch="False" />
+            <line number="13" hits="33" branch="False" />
+            <line number="14" hits="33" branch="False" />
+            <line number="15" hits="33" branch="False" />
+            <line number="16" hits="33" branch="False" />
+            <line number="17" hits="33" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.DB.UnitOfWork" filename="nuget-fiap-app-produto-repository\DB\UnitOfWork.cs" line-rate="1" branch-rate="0.5" complexity="3">
+          <methods>
+            <method name="Dispose" signature="()" line-rate="1" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="15" hits="13" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="12" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+              </lines>
+            </method>
+            <method name=".ctor" signature="(nuget_fiap_app_produto_repository.DB.RepositoryDB)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="23" branch="False" />
+                <line number="11" hits="23" branch="False" />
+                <line number="12" hits="23" branch="False" />
+                <line number="13" hits="23" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="13" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="12" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="10" hits="23" branch="False" />
+            <line number="11" hits="23" branch="False" />
+            <line number="12" hits="23" branch="False" />
+            <line number="13" hits="23" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto_repository.DB.DTO.Conexao" filename="nuget-fiap-app-produto-repository\DB\DTO\Conexao.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_Senha" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="66" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Instance" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="66" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Usuario" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="66" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="33" branch="False" />
+                <line number="9" hits="33" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="66" branch="False" />
+            <line number="12" hits="66" branch="False" />
+            <line number="13" hits="66" branch="False" />
+            <line number="8" hits="33" branch="False" />
+            <line number="9" hits="33" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="nuget-fiap-app-produto-server" line-rate="1" branch-rate="1" complexity="1">
+      <classes>
+        <class name="Program" filename="nuget-fiap-app-produto-server\Program.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="Main" signature="(System.String[])" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="2" branch="False" />
+                <line number="15" hits="2" branch="False" />
+                <line number="18" hits="2" branch="False" />
+                <line number="19" hits="2" branch="False" />
+                <line number="20" hits="2" branch="False" />
+                <line number="21" hits="2" branch="False" />
+                <line number="22" hits="2" branch="False" />
+                <line number="23" hits="2" branch="False" />
+                <line number="26" hits="2" branch="False" />
+                <line number="29" hits="2" branch="False" />
+                <line number="30" hits="2" branch="False" />
+                <line number="31" hits="2" branch="False" />
+                <line number="32" hits="2" branch="False" />
+                <line number="33" hits="2" branch="False" />
+                <line number="34" hits="2" branch="False" />
+                <line number="35" hits="2" branch="False" />
+                <line number="36" hits="2" branch="False" />
+                <line number="37" hits="2" branch="False" />
+                <line number="38" hits="2" branch="False" />
+                <line number="39" hits="2" branch="False" />
+                <line number="40" hits="2" branch="False" />
+                <line number="41" hits="2" branch="False" />
+                <line number="42" hits="2" branch="False" />
+                <line number="43" hits="4" branch="False" />
+                <line number="45" hits="2" branch="False" />
+                <line number="48" hits="2" branch="False" />
+                <line number="49" hits="2" branch="False" />
+                <line number="50" hits="2" branch="False" />
+                <line number="51" hits="2" branch="False" />
+                <line number="52" hits="2" branch="False" />
+                <line number="53" hits="2" branch="False" />
+                <line number="54" hits="4" branch="False" />
+                <line number="56" hits="2" branch="False" />
+                <line number="57" hits="2" branch="False" />
+                <line number="58" hits="2" branch="False" />
+                <line number="59" hits="2" branch="False" />
+                <line number="60" hits="2" branch="False" />
+                <line number="61" hits="2" branch="False" />
+                <line number="62" hits="2" branch="False" />
+                <line number="63" hits="2" branch="False" />
+                <line number="64" hits="2" branch="False" />
+                <line number="65" hits="2" branch="False" />
+                <line number="66" hits="2" branch="False" />
+                <line number="68" hits="2" branch="False" />
+                <line number="69" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="2" branch="False" />
+            <line number="15" hits="2" branch="False" />
+            <line number="18" hits="2" branch="False" />
+            <line number="19" hits="2" branch="False" />
+            <line number="20" hits="2" branch="False" />
+            <line number="21" hits="2" branch="False" />
+            <line number="22" hits="2" branch="False" />
+            <line number="23" hits="2" branch="False" />
+            <line number="26" hits="2" branch="False" />
+            <line number="29" hits="2" branch="False" />
+            <line number="30" hits="2" branch="False" />
+            <line number="31" hits="2" branch="False" />
+            <line number="32" hits="2" branch="False" />
+            <line number="33" hits="2" branch="False" />
+            <line number="34" hits="2" branch="False" />
+            <line number="35" hits="2" branch="False" />
+            <line number="36" hits="2" branch="False" />
+            <line number="37" hits="2" branch="False" />
+            <line number="38" hits="2" branch="False" />
+            <line number="39" hits="2" branch="False" />
+            <line number="40" hits="2" branch="False" />
+            <line number="41" hits="2" branch="False" />
+            <line number="42" hits="2" branch="False" />
+            <line number="43" hits="4" branch="False" />
+            <line number="45" hits="2" branch="False" />
+            <line number="48" hits="2" branch="False" />
+            <line number="49" hits="2" branch="False" />
+            <line number="50" hits="2" branch="False" />
+            <line number="51" hits="2" branch="False" />
+            <line number="52" hits="2" branch="False" />
+            <line number="53" hits="2" branch="False" />
+            <line number="54" hits="4" branch="False" />
+            <line number="56" hits="2" branch="False" />
+            <line number="57" hits="2" branch="False" />
+            <line number="58" hits="2" branch="False" />
+            <line number="59" hits="2" branch="False" />
+            <line number="60" hits="2" branch="False" />
+            <line number="61" hits="2" branch="False" />
+            <line number="62" hits="2" branch="False" />
+            <line number="63" hits="2" branch="False" />
+            <line number="64" hits="2" branch="False" />
+            <line number="65" hits="2" branch="False" />
+            <line number="66" hits="2" branch="False" />
+            <line number="68" hits="2" branch="False" />
+            <line number="69" hits="2" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="nuget-fiap-app-produto" line-rate="0.7345" branch-rate="0.9545" complexity="39">
+      <classes>
+        <class name="nuget_fiap_app_produto.Services.CategoriaService" filename="nuget-fiap-app-produto\Services\CategoriaService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(nuget_fiap_app_produto_common.Interfaces.Repository.ICategoriaRepository,nuget_fiap_app_produto_common.Interfaces.Services.IProdutoService,nuget_fiap_app_produto_repository.Interface.IUnitOfWork)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="17" branch="False" />
+                <line number="16" hits="17" branch="False" />
+                <line number="17" hits="17" branch="False" />
+                <line number="18" hits="17" branch="False" />
+                <line number="19" hits="17" branch="False" />
+                <line number="20" hits="17" branch="False" />
+                <line number="21" hits="17" branch="False" />
+                <line number="22" hits="17" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="17" branch="False" />
+            <line number="16" hits="17" branch="False" />
+            <line number="17" hits="17" branch="False" />
+            <line number="18" hits="17" branch="False" />
+            <line number="19" hits="17" branch="False" />
+            <line number="20" hits="17" branch="False" />
+            <line number="21" hits="17" branch="False" />
+            <line number="22" hits="17" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Services.CategoriaService/&lt;CanDeleteCategoria&gt;d__9" filename="nuget-fiap-app-produto\Services\CategoriaService.cs" line-rate="1" branch-rate="0.75" complexity="4">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="0.75" complexity="4">
+              <lines>
+                <line number="105" hits="5" branch="False" />
+                <line number="107" hits="5" branch="False" />
+                <line number="109" hits="5" branch="True" condition-coverage="75% (3/4)">
+                  <conditions>
+                    <condition number="157" type="jump" coverage="50%" />
+                    <condition number="177" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="110" hits="1" branch="False" />
+                <line number="112" hits="1" branch="False" />
+                <line number="116" hits="4" branch="False" />
+                <line number="117" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="105" hits="5" branch="False" />
+            <line number="107" hits="5" branch="False" />
+            <line number="109" hits="5" branch="True" condition-coverage="75% (3/4)">
+              <conditions>
+                <condition number="157" type="jump" coverage="50%" />
+                <condition number="177" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="110" hits="1" branch="False" />
+            <line number="112" hits="1" branch="False" />
+            <line number="116" hits="4" branch="False" />
+            <line number="117" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Services.CategoriaService/&lt;Create&gt;d__4" filename="nuget-fiap-app-produto\Services\CategoriaService.cs" line-rate="0.625" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.625" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="9" branch="False" />
+                <line number="27" hits="9" branch="False" />
+                <line number="28" hits="9" branch="False" />
+                <line number="29" hits="9" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="35" hits="9" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="9" branch="False" />
+            <line number="27" hits="9" branch="False" />
+            <line number="28" hits="9" branch="False" />
+            <line number="29" hits="9" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="35" hits="9" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Services.CategoriaService/&lt;Delete&gt;d__5" filename="nuget-fiap-app-produto\Services\CategoriaService.cs" line-rate="0.7272" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.7272" branch-rate="1" complexity="2">
+              <lines>
+                <line number="38" hits="5" branch="False" />
+                <line number="39" hits="5" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="150" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="1" branch="False" />
+                <line number="45" hits="4" branch="False" />
+                <line number="46" hits="4" branch="False" />
+                <line number="47" hits="4" branch="False" />
+                <line number="49" hits="0" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="51" hits="0" branch="False" />
+                <line number="53" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="38" hits="5" branch="False" />
+            <line number="39" hits="5" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="150" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="45" hits="4" branch="False" />
+            <line number="46" hits="4" branch="False" />
+            <line number="47" hits="4" branch="False" />
+            <line number="49" hits="0" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="53" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Services.CategoriaService/&lt;GetAll&gt;d__6" filename="nuget-fiap-app-produto\Services\CategoriaService.cs" line-rate="0.5714" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.5714" branch-rate="1" complexity="1">
+              <lines>
+                <line number="56" hits="3" branch="False" />
+                <line number="58" hits="3" branch="False" />
+                <line number="59" hits="3" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+                <line number="63" hits="0" branch="False" />
+                <line number="65" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="56" hits="3" branch="False" />
+            <line number="58" hits="3" branch="False" />
+            <line number="59" hits="3" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
+            <line number="63" hits="0" branch="False" />
+            <line number="65" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Services.CategoriaService/&lt;GetById&gt;d__7" filename="nuget-fiap-app-produto\Services\CategoriaService.cs" line-rate="0.5714" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.5714" branch-rate="1" complexity="1">
+              <lines>
+                <line number="68" hits="6" branch="False" />
+                <line number="70" hits="6" branch="False" />
+                <line number="71" hits="6" branch="False" />
+                <line number="73" hits="0" branch="False" />
+                <line number="74" hits="0" branch="False" />
+                <line number="75" hits="0" branch="False" />
+                <line number="77" hits="6" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="68" hits="6" branch="False" />
+            <line number="70" hits="6" branch="False" />
+            <line number="71" hits="6" branch="False" />
+            <line number="73" hits="0" branch="False" />
+            <line number="74" hits="0" branch="False" />
+            <line number="75" hits="0" branch="False" />
+            <line number="77" hits="6" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Services.CategoriaService/&lt;Update&gt;d__8" filename="nuget-fiap-app-produto\Services\CategoriaService.cs" line-rate="0.7692" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.7692" branch-rate="1" complexity="2">
+              <lines>
+                <line number="80" hits="3" branch="False" />
+                <line number="82" hits="3" branch="False" />
+                <line number="83" hits="3" branch="False" />
+                <line number="85" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="185" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="86" hits="1" branch="False" />
+                <line number="87" hits="1" branch="False" />
+                <line number="93" hits="2" branch="False" />
+                <line number="95" hits="2" branch="False" />
+                <line number="96" hits="2" branch="False" />
+                <line number="98" hits="0" branch="False" />
+                <line number="99" hits="0" branch="False" />
+                <line number="100" hits="0" branch="False" />
+                <line number="102" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="80" hits="3" branch="False" />
+            <line number="82" hits="3" branch="False" />
+            <line number="83" hits="3" branch="False" />
+            <line number="85" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="185" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="86" hits="1" branch="False" />
+            <line number="87" hits="1" branch="False" />
+            <line number="93" hits="2" branch="False" />
+            <line number="95" hits="2" branch="False" />
+            <line number="96" hits="2" branch="False" />
+            <line number="98" hits="0" branch="False" />
+            <line number="99" hits="0" branch="False" />
+            <line number="100" hits="0" branch="False" />
+            <line number="102" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Services.ProdutoService" filename="nuget-fiap-app-produto\Services\ProdutoService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(nuget_fiap_app_produto_common.Interfaces.Repository.IProdutoRepository,nuget_fiap_app_produto_repository.Interface.IUnitOfWork)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="34" branch="False" />
+                <line number="14" hits="34" branch="False" />
+                <line number="15" hits="34" branch="False" />
+                <line number="16" hits="34" branch="False" />
+                <line number="17" hits="34" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="34" branch="False" />
+            <line number="14" hits="34" branch="False" />
+            <line number="15" hits="34" branch="False" />
+            <line number="16" hits="34" branch="False" />
+            <line number="17" hits="34" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Services.ProdutoService/&lt;Create&gt;d__3" filename="nuget-fiap-app-produto\Services\ProdutoService.cs" line-rate="0.625" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.625" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="8" branch="False" />
+                <line number="22" hits="8" branch="False" />
+                <line number="23" hits="8" branch="False" />
+                <line number="24" hits="8" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="30" hits="8" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="8" branch="False" />
+            <line number="22" hits="8" branch="False" />
+            <line number="23" hits="8" branch="False" />
+            <line number="24" hits="8" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="30" hits="8" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Services.ProdutoService/&lt;Delete&gt;d__4" filename="nuget-fiap-app-produto\Services\ProdutoService.cs" line-rate="0.625" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.625" branch-rate="1" complexity="1">
+              <lines>
+                <line number="33" hits="4" branch="False" />
+                <line number="35" hits="4" branch="False" />
+                <line number="36" hits="4" branch="False" />
+                <line number="37" hits="4" branch="False" />
+                <line number="39" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="43" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="33" hits="4" branch="False" />
+            <line number="35" hits="4" branch="False" />
+            <line number="36" hits="4" branch="False" />
+            <line number="37" hits="4" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="43" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Services.ProdutoService/&lt;GetAll&gt;d__5" filename="nuget-fiap-app-produto\Services\ProdutoService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="46" hits="3" branch="False" />
+                <line number="47" hits="3" branch="False" />
+                <line number="48" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="46" hits="3" branch="False" />
+            <line number="47" hits="3" branch="False" />
+            <line number="48" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Services.ProdutoService/&lt;GetById&gt;d__6" filename="nuget-fiap-app-produto\Services\ProdutoService.cs" line-rate="0.5714" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.5714" branch-rate="1" complexity="1">
+              <lines>
+                <line number="51" hits="5" branch="False" />
+                <line number="53" hits="5" branch="False" />
+                <line number="54" hits="5" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="57" hits="0" branch="False" />
+                <line number="58" hits="0" branch="False" />
+                <line number="60" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="51" hits="5" branch="False" />
+            <line number="53" hits="5" branch="False" />
+            <line number="54" hits="5" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
+            <line number="58" hits="0" branch="False" />
+            <line number="60" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Services.ProdutoService/&lt;GetByIdCategoria&gt;d__7" filename="nuget-fiap-app-produto\Services\ProdutoService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="63" hits="6" branch="False" />
+                <line number="64" hits="6" branch="False" />
+                <line number="65" hits="6" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="63" hits="6" branch="False" />
+            <line number="64" hits="6" branch="False" />
+            <line number="65" hits="6" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Services.ProdutoService/&lt;Update&gt;d__8" filename="nuget-fiap-app-produto\Services\ProdutoService.cs" line-rate="0.8234999999999999" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.8234999999999999" branch-rate="1" complexity="2">
+              <lines>
+                <line number="68" hits="4" branch="False" />
+                <line number="71" hits="4" branch="False" />
+                <line number="72" hits="4" branch="False" />
+                <line number="74" hits="4" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="185" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="75" hits="1" branch="False" />
+                <line number="76" hits="1" branch="False" />
+                <line number="82" hits="3" branch="False" />
+                <line number="83" hits="3" branch="False" />
+                <line number="84" hits="3" branch="False" />
+                <line number="85" hits="3" branch="False" />
+                <line number="86" hits="3" branch="False" />
+                <line number="88" hits="3" branch="False" />
+                <line number="89" hits="3" branch="False" />
+                <line number="91" hits="0" branch="False" />
+                <line number="92" hits="0" branch="False" />
+                <line number="93" hits="0" branch="False" />
+                <line number="95" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="68" hits="4" branch="False" />
+            <line number="71" hits="4" branch="False" />
+            <line number="72" hits="4" branch="False" />
+            <line number="74" hits="4" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="185" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="75" hits="1" branch="False" />
+            <line number="76" hits="1" branch="False" />
+            <line number="82" hits="3" branch="False" />
+            <line number="83" hits="3" branch="False" />
+            <line number="84" hits="3" branch="False" />
+            <line number="85" hits="3" branch="False" />
+            <line number="86" hits="3" branch="False" />
+            <line number="88" hits="3" branch="False" />
+            <line number="89" hits="3" branch="False" />
+            <line number="91" hits="0" branch="False" />
+            <line number="92" hits="0" branch="False" />
+            <line number="93" hits="0" branch="False" />
+            <line number="95" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Controllers.CategoriaController" filename="nuget-fiap-app-produto\Controllers\CategoriaController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(nuget_fiap_app_produto_common.Interfaces.Services.ICategoriaService)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="11" branch="False" />
+                <line number="18" hits="11" branch="False" />
+                <line number="19" hits="11" branch="False" />
+                <line number="20" hits="11" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="11" branch="False" />
+            <line number="18" hits="11" branch="False" />
+            <line number="19" hits="11" branch="False" />
+            <line number="20" hits="11" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Controllers.CategoriaController/&lt;Delete&gt;d__6" filename="nuget-fiap-app-produto\Controllers\CategoriaController.cs" line-rate="0.7272" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.7272" branch-rate="1" complexity="2">
+              <lines>
+                <line number="151" hits="3" branch="False" />
+                <line number="153" hits="3" branch="False" />
+                <line number="154" hits="3" branch="False" />
+                <line number="156" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="166" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="157" hits="1" branch="False" />
+                <line number="158" hits="1" branch="False" />
+                <line number="160" hits="2" branch="False" />
+                <line number="162" hits="0" branch="False" />
+                <line number="163" hits="0" branch="False" />
+                <line number="164" hits="0" branch="False" />
+                <line number="166" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="151" hits="3" branch="False" />
+            <line number="153" hits="3" branch="False" />
+            <line number="154" hits="3" branch="False" />
+            <line number="156" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="166" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="157" hits="1" branch="False" />
+            <line number="158" hits="1" branch="False" />
+            <line number="160" hits="2" branch="False" />
+            <line number="162" hits="0" branch="False" />
+            <line number="163" hits="0" branch="False" />
+            <line number="164" hits="0" branch="False" />
+            <line number="166" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Controllers.CategoriaController/&lt;GetAll&gt;d__2" filename="nuget-fiap-app-produto\Controllers\CategoriaController.cs" line-rate="0.625" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.625" branch-rate="1" complexity="1">
+              <lines>
+                <line number="32" hits="2" branch="False" />
+                <line number="34" hits="2" branch="False" />
+                <line number="35" hits="2" branch="False" />
+                <line number="37" hits="2" branch="False" />
+                <line number="39" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="43" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="32" hits="2" branch="False" />
+            <line number="34" hits="2" branch="False" />
+            <line number="35" hits="2" branch="False" />
+            <line number="37" hits="2" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="43" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Controllers.CategoriaController/&lt;GetById&gt;d__3" filename="nuget-fiap-app-produto\Controllers\CategoriaController.cs" line-rate="0.7272" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.7272" branch-rate="1" complexity="2">
+              <lines>
+                <line number="60" hits="2" branch="False" />
+                <line number="62" hits="2" branch="False" />
+                <line number="63" hits="2" branch="False" />
+                <line number="65" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="173" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="66" hits="1" branch="False" />
+                <line number="67" hits="1" branch="False" />
+                <line number="69" hits="1" branch="False" />
+                <line number="71" hits="0" branch="False" />
+                <line number="72" hits="0" branch="False" />
+                <line number="73" hits="0" branch="False" />
+                <line number="75" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="60" hits="2" branch="False" />
+            <line number="62" hits="2" branch="False" />
+            <line number="63" hits="2" branch="False" />
+            <line number="65" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="173" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="66" hits="1" branch="False" />
+            <line number="67" hits="1" branch="False" />
+            <line number="69" hits="1" branch="False" />
+            <line number="71" hits="0" branch="False" />
+            <line number="72" hits="0" branch="False" />
+            <line number="73" hits="0" branch="False" />
+            <line number="75" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Controllers.CategoriaController/&lt;Post&gt;d__4" filename="nuget-fiap-app-produto\Controllers\CategoriaController.cs" line-rate="0.625" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.625" branch-rate="1" complexity="1">
+              <lines>
+                <line number="90" hits="2" branch="False" />
+                <line number="92" hits="2" branch="False" />
+                <line number="93" hits="2" branch="False" />
+                <line number="94" hits="2" branch="False" />
+                <line number="96" hits="0" branch="False" />
+                <line number="97" hits="0" branch="False" />
+                <line number="98" hits="0" branch="False" />
+                <line number="100" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="90" hits="2" branch="False" />
+            <line number="92" hits="2" branch="False" />
+            <line number="93" hits="2" branch="False" />
+            <line number="94" hits="2" branch="False" />
+            <line number="96" hits="0" branch="False" />
+            <line number="97" hits="0" branch="False" />
+            <line number="98" hits="0" branch="False" />
+            <line number="100" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Controllers.CategoriaController/&lt;Put&gt;d__5" filename="nuget-fiap-app-produto\Controllers\CategoriaController.cs" line-rate="0.7272" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.7272" branch-rate="1" complexity="2">
+              <lines>
+                <line number="119" hits="2" branch="False" />
+                <line number="121" hits="2" branch="False" />
+                <line number="122" hits="2" branch="False" />
+                <line number="124" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="172" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="125" hits="1" branch="False" />
+                <line number="126" hits="1" branch="False" />
+                <line number="128" hits="1" branch="False" />
+                <line number="130" hits="0" branch="False" />
+                <line number="131" hits="0" branch="False" />
+                <line number="132" hits="0" branch="False" />
+                <line number="134" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="119" hits="2" branch="False" />
+            <line number="121" hits="2" branch="False" />
+            <line number="122" hits="2" branch="False" />
+            <line number="124" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="172" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="125" hits="1" branch="False" />
+            <line number="126" hits="1" branch="False" />
+            <line number="128" hits="1" branch="False" />
+            <line number="130" hits="0" branch="False" />
+            <line number="131" hits="0" branch="False" />
+            <line number="132" hits="0" branch="False" />
+            <line number="134" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Controllers.ProdutoController" filename="nuget-fiap-app-produto\Controllers\ProdutoController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(nuget_fiap_app_produto_common.Interfaces.Services.IProdutoService)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="15" branch="False" />
+                <line number="17" hits="15" branch="False" />
+                <line number="18" hits="15" branch="False" />
+                <line number="19" hits="15" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="15" branch="False" />
+            <line number="17" hits="15" branch="False" />
+            <line number="18" hits="15" branch="False" />
+            <line number="19" hits="15" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Controllers.ProdutoController/&lt;Delete&gt;d__5" filename="nuget-fiap-app-produto\Controllers\ProdutoController.cs" line-rate="0.7272" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.7272" branch-rate="1" complexity="2">
+              <lines>
+                <line number="108" hits="3" branch="False" />
+                <line number="110" hits="3" branch="False" />
+                <line number="111" hits="3" branch="False" />
+                <line number="113" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="166" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="114" hits="1" branch="False" />
+                <line number="115" hits="1" branch="False" />
+                <line number="117" hits="2" branch="False" />
+                <line number="119" hits="0" branch="False" />
+                <line number="120" hits="0" branch="False" />
+                <line number="121" hits="0" branch="False" />
+                <line number="123" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="108" hits="3" branch="False" />
+            <line number="110" hits="3" branch="False" />
+            <line number="111" hits="3" branch="False" />
+            <line number="113" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="166" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="114" hits="1" branch="False" />
+            <line number="115" hits="1" branch="False" />
+            <line number="117" hits="2" branch="False" />
+            <line number="119" hits="0" branch="False" />
+            <line number="120" hits="0" branch="False" />
+            <line number="121" hits="0" branch="False" />
+            <line number="123" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Controllers.ProdutoController/&lt;GetAll&gt;d__2" filename="nuget-fiap-app-produto\Controllers\ProdutoController.cs" line-rate="0.625" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.625" branch-rate="1" complexity="1">
+              <lines>
+                <line number="31" hits="2" branch="False" />
+                <line number="33" hits="2" branch="False" />
+                <line number="34" hits="2" branch="False" />
+                <line number="35" hits="2" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="39" hits="0" branch="False" />
+                <line number="41" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="31" hits="2" branch="False" />
+            <line number="33" hits="2" branch="False" />
+            <line number="34" hits="2" branch="False" />
+            <line number="35" hits="2" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="41" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Controllers.ProdutoController/&lt;GetById&gt;d__6" filename="nuget-fiap-app-produto\Controllers\ProdutoController.cs" line-rate="0.7272" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.7272" branch-rate="1" complexity="2">
+              <lines>
+                <line number="140" hits="3" branch="False" />
+                <line number="142" hits="3" branch="False" />
+                <line number="143" hits="3" branch="False" />
+                <line number="145" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="173" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="146" hits="1" branch="False" />
+                <line number="147" hits="1" branch="False" />
+                <line number="149" hits="2" branch="False" />
+                <line number="151" hits="0" branch="False" />
+                <line number="152" hits="0" branch="False" />
+                <line number="153" hits="0" branch="False" />
+                <line number="155" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="140" hits="3" branch="False" />
+            <line number="142" hits="3" branch="False" />
+            <line number="143" hits="3" branch="False" />
+            <line number="145" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="173" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="146" hits="1" branch="False" />
+            <line number="147" hits="1" branch="False" />
+            <line number="149" hits="2" branch="False" />
+            <line number="151" hits="0" branch="False" />
+            <line number="152" hits="0" branch="False" />
+            <line number="153" hits="0" branch="False" />
+            <line number="155" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Controllers.ProdutoController/&lt;GetByIdCategoria&gt;d__3" filename="nuget-fiap-app-produto\Controllers\ProdutoController.cs" line-rate="0.625" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.625" branch-rate="1" complexity="1">
+              <lines>
+                <line number="55" hits="2" branch="False" />
+                <line number="57" hits="2" branch="False" />
+                <line number="58" hits="2" branch="False" />
+                <line number="59" hits="2" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+                <line number="63" hits="0" branch="False" />
+                <line number="65" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="55" hits="2" branch="False" />
+            <line number="57" hits="2" branch="False" />
+            <line number="58" hits="2" branch="False" />
+            <line number="59" hits="2" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
+            <line number="63" hits="0" branch="False" />
+            <line number="65" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Controllers.ProdutoController/&lt;Post&gt;d__4" filename="nuget-fiap-app-produto\Controllers\ProdutoController.cs" line-rate="0.625" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.625" branch-rate="1" complexity="1">
+              <lines>
+                <line number="81" hits="2" branch="False" />
+                <line number="83" hits="2" branch="False" />
+                <line number="84" hits="2" branch="False" />
+                <line number="85" hits="2" branch="False" />
+                <line number="87" hits="0" branch="False" />
+                <line number="88" hits="0" branch="False" />
+                <line number="89" hits="0" branch="False" />
+                <line number="91" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="81" hits="2" branch="False" />
+            <line number="83" hits="2" branch="False" />
+            <line number="84" hits="2" branch="False" />
+            <line number="85" hits="2" branch="False" />
+            <line number="87" hits="0" branch="False" />
+            <line number="88" hits="0" branch="False" />
+            <line number="89" hits="0" branch="False" />
+            <line number="91" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="nuget_fiap_app_produto.Controllers.ProdutoController/&lt;Put&gt;d__7" filename="nuget-fiap-app-produto\Controllers\ProdutoController.cs" line-rate="0.7272" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.7272" branch-rate="1" complexity="2">
+              <lines>
+                <line number="174" hits="3" branch="False" />
+                <line number="176" hits="3" branch="False" />
+                <line number="178" hits="3" branch="False" />
+                <line number="180" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="172" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="181" hits="1" branch="False" />
+                <line number="182" hits="1" branch="False" />
+                <line number="184" hits="2" branch="False" />
+                <line number="186" hits="0" branch="False" />
+                <line number="187" hits="0" branch="False" />
+                <line number="188" hits="0" branch="False" />
+                <line number="190" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="174" hits="3" branch="False" />
+            <line number="176" hits="3" branch="False" />
+            <line number="178" hits="3" branch="False" />
+            <line number="180" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="172" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="181" hits="1" branch="False" />
+            <line number="182" hits="1" branch="False" />
+            <line number="184" hits="2" branch="False" />
+            <line number="186" hits="0" branch="False" />
+            <line number="187" hits="0" branch="False" />
+            <line number="188" hits="0" branch="False" />
+            <line number="190" hits="3" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
